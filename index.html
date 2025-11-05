@@ -269,6 +269,72 @@
             text-decoration: underline;
         }
 
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 30px 0;
+            background-color: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .comparison-table th {
+            background-color: #1d4486;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        .comparison-table th:first-child {
+            border-radius: 5px 0 0 0;
+        }
+
+        .comparison-table th:last-child {
+            border-radius: 0 5px 0 0;
+        }
+
+        .comparison-table td {
+            padding: 15px;
+            border-bottom: 1px solid #e0e0e0;
+            font-size: 11pt;
+        }
+
+        .comparison-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .comparison-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+
+        .comparison-table td:first-child {
+            font-weight: 700;
+            color: #1d4486;
+        }
+
+        .comparison-table .yes {
+            color: #28a745;
+            font-weight: 700;
+        }
+
+        .comparison-table .no {
+            color: #dc3545;
+            font-weight: 700;
+        }
+
+        .comparison-table .varies {
+            color: #ffc107;
+            font-weight: 700;
+        }
+
+        .comparison-table .partial {
+            color: #17a2b8;
+            font-weight: 700;
+        }
+
         @media (max-width: 768px) {
             h1 {
                 font-size: 18pt;
@@ -286,6 +352,15 @@
                 display: block;
                 margin: 10px auto;
                 max-width: 300px;
+            }
+
+            .comparison-table {
+                font-size: 10pt;
+            }
+
+            .comparison-table th,
+            .comparison-table td {
+                padding: 10px 8px;
             }
         }
     </style>
@@ -320,6 +395,413 @@
                     <div class="stat-number">100%</div>
                     <div class="stat-label">Ethical Focus</div>
                 </div>
+            </div>
+        </div>
+
+        <!-- Recovery Coach State-by-State Comparison -->
+        <div class="section">
+            <h2>Recovery Coach Requirements by State</h2>
+            <p style="margin-bottom: 20px;">State-by-state breakdown of recovery coach regulations and requirements:</p>
+
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Can Work Independently?</th>
+                        <th>Can Use "Recovery Coach" Title?</th>
+                        <th>"Recovery" Focus of Work?</th>
+                        <th>State Certification Required?</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- HIGHLY REGULATED STATES - CANNOT WORK INDEPENDENTLY -->
+                    <tr style="background-color: #f8d7da;">
+                        <td colspan="5" style="font-weight: 700; text-align: center; color: #721c24; text-transform: uppercase; font-size: 10pt; padding: 10px;">Highly Regulated - Agency Employment Required</td>
+                    </tr>
+                    <tr>
+                        <td><a href="alabama/">Alabama</a></td>
+                        <td><span class="no">No</span><br><small>CRSS tied to agency employment</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CRSS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>CRSS for ADMH-funded programs</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="florida/">Florida</a></td>
+                        <td><span class="no">No</span><br><small>Must work at licensed behavioral health organization</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CBHCM certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Behavioral health recovery focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>CBHCM for Medicaid billing</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="hawaii/">Hawaii</a></td>
+                        <td><span class="no">No</span><br><small>Must work under mental health professional supervision</small></td>
+                        <td><span class="yes">Yes</span><br><small>With certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>State certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="iowa/">Iowa</a></td>
+                        <td><span class="no">No</span><br><small>Must work within licensed agency with IDPH contract</small></td>
+                        <td><span class="yes">Yes</span><br><small>With PRS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>IC&RC PRS certification</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="kentucky/">Kentucky</a></td>
+                        <td><span class="no">No</span><br><small>Must work under approved behavioral health practitioner</small></td>
+                        <td><span class="yes">Yes</span><br><small>With certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus required</small></td>
+                        <td><span class="yes">Yes</span><br><small>State certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="mississippi/">Mississippi</a></td>
+                        <td><span class="no">No</span><br><small>Must be employed in state mental health system</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CPSSP certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>CPSSP certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="montana/">Montana</a></td>
+                        <td><span class="no">No</span><br><small>Licensure + supervision required</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CBHPSS licensure</small></td>
+                        <td><span class="yes">Yes</span><br><small>Behavioral health peer support</small></td>
+                        <td><span class="yes">Yes</span><br><small>CBHPSS licensure required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="new_mexico/">New Mexico</a></td>
+                        <td><span class="no">No</span><br><small>Explicitly prohibited - must work under supervision</small></td>
+                        <td><span class="yes">Yes</span><br><small>With certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>State certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="ohio/">Ohio</a></td>
+                        <td><span class="no">No</span><br><small>Must work within certified behavioral health organizations</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CPRS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>CPRS certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="tennessee/">Tennessee</a></td>
+                        <td><span class="no">No</span><br><small>Explicitly prohibited by code of ethics - agency employment required</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CPRS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery primary focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>CPRS certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="utah/">Utah</a></td>
+                        <td><span class="no">No</span><br><small>Explicitly prohibited - must be employee under supervision</small></td>
+                        <td><span class="yes">Yes</span><br><small>With BHCM certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>BHCM certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="vermont/">Vermont</a></td>
+                        <td><span class="no">No</span><br><small>Must be employed by certified recovery services organization</small></td>
+                        <td><span class="yes">Yes</span><br><small>With PRSS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus required</small></td>
+                        <td><span class="yes">Yes</span><br><small>PRSS certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="virginia/">Virginia</a></td>
+                        <td><span class="partial">Limited</span><br><small>Can work as contractor for licensed entities, not fully autonomous</small></td>
+                        <td><span class="yes">Yes</span><br><small>With CPSS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery primary focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>CPSS certification required</small></td>
+                    </tr>
+
+                    <!-- HIGHLY REGULATED STATES - CAN WORK INDEPENDENTLY WITH CERTIFICATION -->
+                    <tr style="background-color: #d1ecf1;">
+                        <td colspan="5" style="font-weight: 700; text-align: center; color: #0c5460; text-transform: uppercase; font-size: 10pt; padding: 10px;">Highly Regulated - Independent Practice Allowed With Certification</td>
+                    </tr>
+                    <tr>
+                        <td><a href="connecticut/">Connecticut</a></td>
+                        <td><span class="yes">Yes</span><br><small>With RSS or PRC certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>With proper certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support is primary focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>RSS or PRC certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="georgia/">Georgia</a></td>
+                        <td><span class="yes">Yes</span><br><small>With certification (CARES, CPS-AD, CPRC)</small></td>
+                        <td><span class="yes">Yes</span><br><small>Multiple certification titles available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>State certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="louisiana/">Louisiana</a></td>
+                        <td><span class="yes">Yes</span><br><small>With peer support certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>As certified peer specialist</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus required</small></td>
+                        <td><span class="yes">Yes</span><br><small>State certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="massachusetts/">Massachusetts</a></td>
+                        <td><span class="partial">TBD</span><br><small>New licensure law effective March 2025</small></td>
+                        <td><span class="yes">Yes</span><br><small>With new recovery coach license</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>Licensure required (new 2025)</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="michigan/">Michigan</a></td>
+                        <td><span class="yes">Yes</span><br><small>With CPRM certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Certified Peer Recovery Mentor</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery primary focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>CPRM certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="new_jersey/">New Jersey</a></td>
+                        <td><span class="yes">Yes</span><br><small>May open own practice with CPRS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>With certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>CPRS certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="new_york/">New York</a></td>
+                        <td><span class="yes">Yes</span><br><small>Not explicitly prohibited with CRPA certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Certified Recovery Peer Advocate</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery advocacy focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>CRPA certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="pennsylvania/">Pennsylvania</a></td>
+                        <td><span class="yes">Yes</span><br><small>May open own practice with CRS/CPS certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Certified Peer/Recovery Specialist</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="yes">Yes</span><br><small>CRS/CPS certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="texas/">Texas</a></td>
+                        <td><span class="yes">Yes</span><br><small>Independent practice permitted with PRS/RSPS</small></td>
+                        <td><span class="yes">Yes</span><br><small>As certified peer specialist</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support focus</small></td>
+                        <td><span class="yes">Yes</span><br><small>PRS/RSPS certification required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="washington/">Washington</a></td>
+                        <td><span class="yes">Yes</span><br><small>Unregulated - no state requirements</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support focus</small></td>
+                        <td><span class="no">No</span><br><small>Not required (voluntary training available)</small></td>
+                    </tr>
+
+                    <!-- MODERATELY REGULATED STATES -->
+                    <tr style="background-color: #e8f0ff;">
+                        <td colspan="5" style="font-weight: 700; text-align: center; color: #1d4486; text-transform: uppercase; font-size: 10pt; padding: 10px;">Moderately Regulated - Independent Practice Allowed</td>
+                    </tr>
+                    <tr>
+                        <td><a href="arizona/">Arizona</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="arkansas/">Arkansas</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="california/">California</a></td>
+                        <td><span class="partial">With Certification</span><br><small>MPSS for Medi-Cal billing</small></td>
+                        <td><span class="yes">Yes</span><br><small>With certification</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support primary</small></td>
+                        <td><span class="partial">For Medi-Cal</span><br><small>Required for Medi-Cal billing only</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="colorado/">Colorado</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="illinois/">Illinois</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="kansas/">Kansas</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="maryland/">Maryland</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="minnesota/">Minnesota</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="missouri/">Missouri</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="nevada/">Nevada</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="new_hampshire/">New Hampshire</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="north_carolina/">North Carolina</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="oklahoma/">Oklahoma</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="oregon/">Oregon</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="rhode_island/">Rhode Island</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="south_carolina/">South Carolina</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery support allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="wisconsin/">Wisconsin</a></td>
+                        <td><span class="yes">Yes</span><br><small>Voluntary certification available</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Certification voluntary</small></td>
+                    </tr>
+
+                    <!-- UNREGULATED STATES -->
+                    <tr style="background-color: #f8f9fa;">
+                        <td colspan="5" style="font-weight: 700; text-align: center; color: #6c757d; text-transform: uppercase; font-size: 10pt; padding: 10px;">Unregulated States</td>
+                    </tr>
+                    <tr>
+                        <td><a href="alaska/">Alaska</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="delaware/">Delaware</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="district_of_columbia/">District of Columbia</a></td>
+                        <td><span class="yes">Yes</span><br><small>No specific regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="idaho/">Idaho</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="indiana/">Indiana</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="maine/">Maine</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="nebraska/">Nebraska</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="north_dakota/">North Dakota</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="south_dakota/">South Dakota</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="west_virginia/">West Virginia</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                    <tr>
+                        <td><a href="wyoming/">Wyoming</a></td>
+                        <td><span class="yes">Yes</span><br><small>No state regulations</small></td>
+                        <td><span class="yes">Yes</span><br><small>Can use title</small></td>
+                        <td><span class="yes">Yes</span><br><small>Recovery focus allowed</small></td>
+                        <td><span class="no">No</span><br><small>Not required</small></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="alert-box" style="margin-top: 30px;">
+                <h4>Understanding the Categories:</h4>
+                <ul style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li><strong style="color: #28a745;">Yes:</strong> Permitted without restrictions</li>
+                    <li><strong style="color: #dc3545;">No:</strong> Not permitted or requires specific license</li>
+                    <li><strong style="color: #17a2b8;">With Certification:</strong> Requires state certification to practice independently</li>
+                    <li><strong style="color: #ffc107;">For Medicaid/Specific Settings:</strong> Required for specific billing or employment settings only</li>
+                </ul>
+                <p style="margin-top: 20px;"><strong>Important:</strong> Even in unregulated states, ethical practice requires professional liability insurance, clear scope definitions, and ensuring clients have concurrent clinical support.</p>
             </div>
         </div>
 
@@ -368,7 +850,7 @@
                 <div class="practice-card">
                     <h3>Life Coaching</h3>
                     <p>Can you work with recovery clients? Complete DO/DON'T guide for all states.</p>
-                    <a href="LIFE_COACH_RECOVERY_CLIENTS_DOS_DONTS.md">View Guide</a>
+                    <a href="life-coach-recovery-guide.html">View Guide</a>
                 </div>
 
                 <div class="practice-card">
@@ -380,7 +862,7 @@
                 <div class="practice-card">
                     <h3>Ethical Marketing</h3>
                     <p>Marketing guidelines and compliance for recovery coaching professionals.</p>
-                    <a href="RECOVERY_COACHING_ETHICAL_MARKETING_GUIDE.md">View Guide</a>
+                    <a href="recovery-coaching-ethical-marketing-guide.html">View Guide</a>
                 </div>
             </div>
         </div>
