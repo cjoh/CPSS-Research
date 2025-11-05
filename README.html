@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPSS Research - Behavioral Health Practice Guides</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 3rem;
+            margin-bottom: 15px;
+            font-weight: 700;
+        }
+
+        .tagline {
+            color: #666;
+            font-size: 1.3rem;
+            margin-bottom: 30px;
+        }
+
+        .hero-cta {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 18px 50px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 20px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+            margin: 10px;
+        }
+
+        .hero-cta:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 30px rgba(102, 126, 234, 0.6);
+        }
+
+        .secondary-cta {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            border: 3px solid #667eea;
+            padding: 18px 50px;
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            margin: 10px;
+        }
+
+        .secondary-cta:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .section {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #667eea;
+            font-size: 2rem;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            padding: 25px;
+            border-radius: 15px;
+            transition: all 0.3s;
+            text-align: center;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border-color: #667eea;
+        }
+
+        .card-icon {
+            font-size: 3rem;
+            margin-bottom: 15px;
+        }
+
+        .card h3 {
+            color: #333;
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .card-link {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            padding: 10px 20px;
+            border-radius: 20px;
+            background: white;
+            border: 2px solid #667eea;
+            transition: all 0.3s;
+        }
+
+        .card-link:hover {
+            background: #667eea;
+            color: white;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .stat {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            color: #666;
+            font-size: 1rem;
+        }
+
+        footer {
+            background: white;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            color: #666;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .tagline {
+                font-size: 1.1rem;
+            }
+
+            .hero-cta, .secondary-cta {
+                display: block;
+                margin: 10px auto;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🏥 CPSS Research</h1>
+            <p class="tagline">Comprehensive Legal & Certification Guides for Behavioral Health Professionals</p>
+            <p style="color: #999; margin-bottom: 30px;">All 51 U.S. Jurisdictions • 6 Practice Areas • Evidence-Based Research</p>
+
+            <div style="margin-top: 30px;">
+                <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html" class="hero-cta">📊 View Main Dashboard</a>
+                <a href="STATE_BY_STATE_INDEX.html" class="secondary-cta">🗺️ State-by-State Index</a>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>📈 By The Numbers</h2>
+            <div class="stats">
+                <div class="stat">
+                    <div class="stat-number">51</div>
+                    <div class="stat-label">Jurisdictions Researched</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">Practice Areas Covered</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">8</div>
+                    <div class="stat-label">Comprehensive Guides</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">Ethical Focus</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🎯 Practice Areas Covered</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">🧭</div>
+                    <h3>Recovery Coaching</h3>
+                    <p>State-by-state requirements, ethical marketing, and scope of practice for recovery coaches.</p>
+                    <a href="RECOVERY_COACHING_ETHICAL_MARKETING_GUIDE.md" class="card-link">View Guide →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎯</div>
+                    <h3>Life Coaching</h3>
+                    <p>Can you work with recovery clients? Complete DO/DON'T guide for all states.</p>
+                    <a href="LIFE_COACH_RECOVERY_CLIENTS_DOS_DONTS.md" class="card-link">View Guide →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📋</div>
+                    <h3>Case Management</h3>
+                    <p>Licensing, CCM certification, and requirements for case managers in all states.</p>
+                    <a href="CASE_MANAGEMENT_GUIDE.md" class="card-link">View Guide →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🆘</div>
+                    <h3>Interventionists</h3>
+                    <p>Professional intervention practice, certifications (CIP, BRI, CAI), and business guidance.</p>
+                    <a href="INTERVENTIONIST_GUIDE.md" class="card-link">View Guide →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">📖</div>
+                    <h3>Peer Support Certification</h3>
+                    <p>Original peer support specialist certification guide for all states.</p>
+                    <a href="index.html" class="card-link">View Guide →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Recovery Coaching Index</h3>
+                    <p>Interactive index of recovery coaching requirements by state.</p>
+                    <a href="recovery_coaching_index.html" class="card-link">View Index →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚀 Quick Start</h2>
+            <div style="max-width: 800px; margin: 0 auto;">
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin: 20px 0;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">New Visitor?</h3>
+                    <p style="margin-bottom: 15px;">Start with the <strong>Main Dashboard</strong> for an overview of all practice areas, then use the <strong>State-by-State Index</strong> to find requirements for your specific state.</p>
+                    <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html" style="display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: 600; margin-top: 10px;">Get Started →</a>
+                </div>
+
+                <div style="background: #f8f9fa; padding: 30px; border-radius: 15px; margin: 20px 0;">
+                    <h3 style="color: #667eea; margin-bottom: 15px;">Looking for a Specific State?</h3>
+                    <p style="margin-bottom: 15px;">Use the <strong>State-by-State Index</strong> to see all 6 practice areas for your state in one place. Features search and filtering.</p>
+                    <a href="STATE_BY_STATE_INDEX.html" style="display: inline-block; background: #667eea; color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: 600; margin-top: 10px;">Search by State →</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚖️ Universal Ethical Principles</h2>
+            <div style="max-width: 900px; margin: 0 auto;">
+                <div style="background: #fff3cd; border-left: 5px solid #ffc107; padding: 25px; border-radius: 10px; margin: 20px 0;">
+                    <h4 style="color: #856404; margin-bottom: 15px;">Across All Practice Areas:</h4>
+                    <ul style="color: #666; line-height: 2; margin-left: 20px;">
+                        <li><strong>Client Must Have Clinical Support:</strong> For recovery work, clients need therapists/counselors</li>
+                        <li><strong>Stay in Your Lane:</strong> Don't diagnose, treat, or provide clinical services without license</li>
+                        <li><strong>Make Referrals:</strong> Build and use referral network actively</li>
+                        <li><strong>Professional Liability Insurance:</strong> Essential for all practice areas</li>
+                        <li><strong>Clear Agreements:</strong> Written scope clarification for all clients</li>
+                        <li><strong>Continuing Education:</strong> Stay current on laws, ethics, best practices</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔗 Additional Resources</h2>
+            <div class="grid">
+                <div class="card">
+                    <div class="card-icon">📄</div>
+                    <h3>All Markdown Guides</h3>
+                    <p>Download and read offline</p>
+                    <a href="https://github.com/cjoh/CPSS-Research" class="card-link" target="_blank">GitHub Repo →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🏛️</div>
+                    <h3>State Licensing Boards</h3>
+                    <p>Links in each guide</p>
+                    <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html#resources" class="card-link">View Resources →</a>
+                </div>
+
+                <div class="card">
+                    <div class="card-icon">🎓</div>
+                    <h3>Certification Bodies</h3>
+                    <p>CCM, CIP, BRI, CAI, ICF</p>
+                    <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html#resources" class="card-link">View List →</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <h3 style="color: #667eea; margin-bottom: 15px;">Important Disclaimer</h3>
+            <p style="margin-bottom: 15px;">This research is for <strong>informational and educational purposes only</strong> and does not constitute legal, medical, or professional advice.</p>
+            <p style="margin-bottom: 15px;"><strong>Laws change frequently.</strong> Always verify current requirements with state licensing boards, certification organizations, and licensed attorneys in your jurisdiction.</p>
+            <p style="margin-top: 20px; color: #999; font-size: 0.9rem;"><strong>Document Date:</strong> November 5, 2025</p>
+            <p style="color: #999; font-size: 0.9rem;"><strong>Repository:</strong> <a href="https://github.com/cjoh/CPSS-Research" style="color: #667eea; text-decoration: none;">github.com/cjoh/CPSS-Research</a></p>
+        </footer>
+    </div>
+</body>
+</html>
