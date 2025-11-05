@@ -1,0 +1,147 @@
+CORE VALUES PEER SUPPORT CERTIFICATION PAGES - CREATION SUMMARY
+================================================================
+
+Created: All 15 HTML certification pages for states requested
+Date: 2025
+Style: Core Values brand (Bebas Neue headers, Roboto body, #1d4486 blue & white)
+
+COMPLETED STATE PAGES:
+======================
+
+1. ALABAMA - /Users/cjoh/turtlebook/alabama/index.html
+   - Certification: Certified Recovery Support Specialist (CRSS)
+   - Training: 40 hours through COSA-NCADD
+   - Recovery Time: 2 years required
+   - 2025 Conference: March 12-14, 2025
+
+2. ALASKA - /Users/cjoh/turtlebook/alaska/index.html  
+   - Certification: Peer Support Professional (PSP)
+   - Training: 50 CE hours (37.5 core + ethics + confidentiality)
+   - FREE training through Alaska Behavioral Health
+   - 2025 Training: July 28 - August 1, 2025
+
+3. ARIZONA - /Users/cjoh/turtlebook/arizona/index.html
+   - Certification: PRSS (State) & CPRS (IC&RC National)
+   - Training: AHCCCS-approved programs
+   - Fees: $50 application + $150 exam
+   - Scottsdale Training: October 3, 2025
+
+4. ARKANSAS - /Users/cjoh/turtlebook/arkansas/index.html
+   - Certification: Peer Recovery Support Specialist (PRSS)
+   - Three-tier system: Core (30 hrs) → Advanced (16 hrs + 500 exp) → Supervisor
+   - Recovery Time: 2 years required
+   - Application: www.ar.gov/recovery
+
+5. CALIFORNIA - /Users/cjoh/turtlebook/california/index.html
+   - Certification: Medi-Cal Peer Support Specialist (MPSS)
+   - Training: 80 hours through CalMHSA-approved providers
+   - Exam: 2.5 hours, 120 questions covering 17 core competencies
+   - Medi-Cal billable since July 1, 2022
+
+6. COLORADO - /Users/cjoh/turtlebook/colorado/index.html
+   - Certification: Peer Support Professional (PSP)
+   - Training: 60 hours (30+ live, IC&RC domains)
+   - Work Experience: 500 hours over 6 months
+   - IMPORTANT: 2026 credentialing deadline
+
+7. CONNECTICUT - /Users/cjoh/turtlebook/connecticut/index.html
+   - Certifications: RSS (80 hours) & CPRS (5-day intensive)
+   - RSS: Advocacy Unlimited, April 2026 training, $200 fee
+   - CPRS: CCAR Recovery Coach Academy, annual renewal
+   - Dual pathways for comprehensive coverage
+
+8. DELAWARE - /Users/cjoh/turtlebook/delaware/index.html
+   - Certification: Certified Peer Recovery Specialist (CPRS)
+   - Training: 46 hours (9-day program, NO COST)
+   - Work Experience: 500 hours required
+   - Written: 1,000-word lived experience statement
+   - Provider: Mental Health Association in Delaware
+
+9. FLORIDA - /Users/cjoh/turtlebook/florida/index.html
+   - Certification: Certified Recovery Peer Specialist (CRPS)
+   - Training: 40 hours (28 core + 8 wellness + 4 elective)
+   - 2025 Scholarship: July 1, 2024 - June 30, 2025 (covers fees)
+   - Endorsements: Adult, Family, Veteran, Youth, Criminal Justice
+   - Legal recognition in FL Statutes 397.417
+
+10. GEORGIA - /Users/cjoh/turtlebook/georgia/index.html
+    - Certifications: CARES, CPS-AD, CPRC (multiple pathways)
+    - CARES: 40 hours through GA Council for Recovery, Medicaid billable
+    - CPS-AD: 2 years abstinence required
+    - CPRC: 100 hours training through ADACBGA
+    - 25 years of peer support leadership (4,600+ trained)
+
+11. HAWAII - /Users/cjoh/turtlebook/hawaii/index.html
+    - IMPORTANT: No standalone SUD peer certification currently
+    - HCPS available for mental health/co-occurring only
+    - Working group established to address gaps
+    - Alternative: CSAC (professional counselor, not peer)
+
+12. IDAHO - /Users/cjoh/turtlebook/idaho/index.html
+    - Certifications: CPSS (Mental Health) & Peer Recovery Coach (SUD)
+    - CPSS: 40 hours training, through BPA Health partnership
+    - Requirements: 1 year recovery, 100-200 hours experience
+    - Recovery Coach: Through IBADCC, recert every 2 years
+
+13. ILLINOIS - /Users/cjoh/turtlebook/illinois/index.html
+    - Certification: Certified Recovery Support Specialist (CRSS)
+    - Training: 100 hours + 300 internship hours
+    - CRSS: Recognized as Mental Health Professional, Medicaid billable
+    - CPRS: National IC&RC, not recognized as MHP in Illinois
+    - 2025 Success Program: Includes tuition, books, stipend, childcare
+
+14. INDIANA - /Users/cjoh/turtlebook/indiana/index.html
+    - Certifications: CPSP (DMHA) & CPRC (ICAADA)
+    - FREE training and certification (state-funded)
+    - CPSP: 1 year recovery required
+    - CPRC: Medicaid reimbursable
+    - New curriculum aligned with national standards (2025)
+
+15. IOWA - /Users/cjoh/turtlebook/iowa/index.html
+    - Certification: Peer Recovery Specialist (PRS)
+    - Training: UI Peer Workforce Collaborative or approved equivalent
+    - 2025 Schedule: Virtual (Feb 17-20 & 24-26), In-person (Nov 3-7)
+    - Eligibility: Recovery or family member of person in recovery
+
+DESIGN SPECIFICATIONS:
+======================
+- Header Font: Bebas Neue Regular (20pt H1, 16pt H2, 14pt H3)
+- Body Font: Roboto 11pt, color #333333
+- H4: Roboto all caps 12pt
+- Primary Color: #1d4486 (Core Values blue)
+- Secondary Color: White
+- Responsive design with mobile breakpoints
+- Professional layout with clear sections
+- CTA buttons in brand blue
+- Contact boxes with border styling
+- Highlight boxes with light blue background
+- Navigation back to main index
+
+COMMON ELEMENTS:
+================
+- State header with certification name
+- Navigation breadcrumb
+- Certifying body contact information
+- Requirements (recovery time, training, experience)
+- 2025 training schedules where available
+- Approved training providers with contact info
+- Step-by-step application process
+- Renewal requirements
+- Employment & Medicaid reimbursement info
+- Call-to-action buttons
+- Additional resources and links
+- Disclaimer footer
+
+SPECIAL FEATURES BY STATE:
+==========================
+- Alaska: FREE training badge
+- California: First state with Medi-Cal provider status
+- Colorado: 2026 credentialing deadline warning
+- Delaware: 1,000-word essay requirement
+- Florida: 2025 scholarship program badge
+- Hawaii: Limited SUD certification notice
+- Indiana: FREE training & certification badge
+- Illinois: CRSS Success Program details
+- Multiple states: Medicaid billing information
+
+All files are ready for deployment and follow consistent branding and structure.

@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>District of Columbia - Peer Specialist Certification | Core Values</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #1d4486;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20pt;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 14pt;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #1d4486;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 11pt;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0f2442;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .content-section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 16pt;
+            color: #1d4486;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #1d4486;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 14pt;
+            color: #1d4486;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1d4486;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1d4486;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #0f2442;
+        }
+
+        .info-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid #1d4486;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .contact-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .contact-card h4 {
+            margin-top: 0;
+        }
+
+        .contact-item {
+            margin: 0.5rem 0;
+        }
+
+        .contact-item strong {
+            display: inline-block;
+            width: 100px;
+            color: #1d4486;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table th {
+            background-color: #1d4486;
+            color: white;
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .footer {
+            background-color: #1d4486;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            font-size: 10pt;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 18pt;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .content-section {
+                padding: 1.5rem;
+            }
+
+            .contact-item strong {
+                display: block;
+                width: 100%;
+                margin-bottom: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>District of Columbia</h1>
+        <div class="subtitle">Peer Specialist Certification</div>
+    </div>
+
+    <nav>
+        <a href="../index.html">← Back to State Directory</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Overview</h2>
+            <p>The District of Columbia Department of Behavioral Health (DBH) offers Peer Specialist Certification through the Consumer and Family Affairs Administration. The program provides comprehensive training for individuals with lived experience of mental illness and/or substance use disorders who wish to support others in their recovery journey. Training is offered at least three times per year with a competitive application process.</p>
+
+            <div class="info-box">
+                <h4>2025 Program Schedule</h4>
+                <p>The DBH Peer Specialist Certification Training Program has <strong>three sessions scheduled in 2025</strong>. Applications are accepted on a rolling basis for upcoming sessions.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Official Certification Names</h2>
+            <ul>
+                <li><strong>Certified Peer Specialist</strong> - For individuals with lived experience</li>
+                <li><strong>Family Peer Specialist</strong> - For family members of individuals with behavioral health challenges</li>
+                <li><strong>Youth Peer Specialist</strong> - For youth with lived experience</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Certifying Body</h2>
+            <div class="contact-card">
+                <h4>District of Columbia Department of Behavioral Health (DBH)</h4>
+                <p>Consumer and Family Affairs Administration</p>
+                <div class="contact-item">
+                    <strong>Phone:</strong> (202) 673-4377
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:dbh.peersupport@dc.gov">dbh.peersupport@dc.gov</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Address:</strong> 64 New York Avenue, NE, 3rd Floor, Washington, DC 20002
+                </div>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://dbh.dc.gov/service/peer-specialist-certification-program">dbh.dc.gov/peer-specialist-certification</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Eligibility Requirements</h2>
+
+            <h3>Basic Requirements</h3>
+            <ol>
+                <li><strong>Residency:</strong> Must be a District of Columbia resident</li>
+                <li><strong>Age:</strong> At least 18 years of age</li>
+                <li><strong>Education:</strong> High school diploma, GED, or higher</li>
+                <li><strong>Recovery Status:</strong> In recovery from mental illness and/or substance use disorder for <strong>two years or longer</strong></li>
+                <li><strong>Lived Experience:</strong> Direct personal experience with mental health or substance use services</li>
+            </ol>
+
+            <div class="warning-box">
+                <h4>Important: Two-Year Recovery Requirement</h4>
+                <p>DC requires at least <strong>two years of recovery</strong> - this is more stringent than some states. Make sure you meet this requirement before applying.</p>
+            </div>
+
+            <h3>Application Requirements</h3>
+            <p>When applying, candidates must submit:</p>
+            <ul>
+                <li>Completed online application</li>
+                <li>Current resume</li>
+                <li>Proof of DC residency</li>
+                <li>Evidence of education (high school diploma, GED, or higher)</li>
+                <li>Two letters of reference (no older than one year)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Training Requirements</h2>
+
+            <h3>Core Curriculum Training</h3>
+            <ul>
+                <li>Comprehensive peer specialist training</li>
+                <li>Builds on participant's lived experience</li>
+                <li>Foundational competencies consistent with SAMHSA national standards</li>
+                <li>Recovery-oriented principles and practices</li>
+                <li>Ethics and professional boundaries</li>
+                <li>Wellness and self-care strategies</li>
+                <li>Cultural competency</li>
+                <li>Advocacy and empowerment skills</li>
+            </ul>
+
+            <h3>Field Practicum</h3>
+            <div class="info-box">
+                <h4>80-Hour Field Practicum Required</h4>
+                <ul>
+                    <li>Supervised practical experience after classroom training</li>
+                    <li>Application of classroom learning</li>
+                    <li>Competency demonstration</li>
+                    <li>Must be completed to receive certification</li>
+                </ul>
+            </div>
+
+            <h3>Training Frequency</h3>
+            <ul>
+                <li>Trainings held at least three times per year</li>
+                <li>Applications accepted on rolling basis for upcoming sessions</li>
+                <li>Competitive selection process</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Application Process</h2>
+
+            <h3>Competitive Application</h3>
+            <p>Applications are <strong>ranked on a points basis</strong> with the following criteria:</p>
+
+            <div class="info-box">
+                <h4>Points Awarded For:</h4>
+                <ol>
+                    <li>Previous peer-related training</li>
+                    <li>Job experience in peer support or related fields</li>
+                    <li>Excellence of written responses to application questions</li>
+                    <li>Quality of essay question responses</li>
+                    <li>Demonstrated understanding of recovery principles</li>
+                    <li>Commitment to peer support work</li>
+                </ol>
+            </div>
+
+            <h3>Step-by-Step Application Process</h3>
+
+            <ol>
+                <li>
+                    <strong>Verify Eligibility</strong>
+                    <ul>
+                        <li>Confirm DC residency</li>
+                        <li>Ensure 2+ years of recovery</li>
+                        <li>Verify educational requirements met</li>
+                        <li>Confirm age requirement (18+)</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Prepare Application Materials</strong>
+                    <ul>
+                        <li>Gather proof of residency</li>
+                        <li>Locate education documents</li>
+                        <li>Request two letters of reference (must be current within 1 year)</li>
+                        <li>Prepare current resume</li>
+                        <li>Write thoughtful essay responses</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Submit Online Application</strong>
+                    <ul>
+                        <li>Complete application at DBH website</li>
+                        <li>Include all required documentation</li>
+                        <li>Submit essay responses</li>
+                        <li>Provide reference letters</li>
+                        <li>Upload all required documents</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Application Review</strong>
+                    <ul>
+                        <li>DBH reviews and ranks applications</li>
+                        <li>Competitive scoring process</li>
+                        <li>Top-ranked applicants selected</li>
+                        <li>Selection notification sent</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Attend Training</strong>
+                    <ul>
+                        <li>Complete all classroom training sessions</li>
+                        <li>Participate fully in training activities</li>
+                        <li>Meet attendance requirements</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Complete Practicum</strong>
+                    <ul>
+                        <li>Complete 80-hour supervised field practicum</li>
+                        <li>Document practicum hours</li>
+                        <li>Demonstrate competencies</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Pass Certification Exam</strong>
+                    <ul>
+                        <li>Take DBH certification examination</li>
+                        <li>Pass exam to receive certification</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Receive Certification</strong>
+                    <ul>
+                        <li>DBH issues Peer Specialist Certification</li>
+                        <li>Begin work as Certified Peer Specialist</li>
+                    </ul>
+                </li>
+            </ol>
+
+            <a href="https://dbh.dc.gov/service/peer-specialist-certification-program" class="cta-button">Apply Now</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Waiver Option</h2>
+
+            <h3>Waiver Eligibility</h3>
+            <p>For experienced peer support workers, a waiver process is available.</p>
+
+            <h4>Waiver Requirements:</h4>
+            <ol>
+                <li><strong>Age:</strong> At least 18 years of age</li>
+                <li><strong>Education:</strong> High school diploma, GED, or higher</li>
+                <li><strong>Recovery Status:</strong> In recovery from mental illness and/or substance use disorder for two years or longer</li>
+            </ol>
+
+            <p><strong>AND ONE of the following:</strong></p>
+            <ul>
+                <li><strong>Work Experience:</strong> Currently or formerly employed in a peer capacity within DC behavioral health system or its contractors for a <strong>minimum of five years</strong></li>
+                <li><strong>Existing Certification:</strong> Have current certification from another state or jurisdiction (in good standing)</li>
+            </ul>
+
+            <h3>Waiver Testing</h3>
+            <ul>
+                <li>Three waiver testing sessions scheduled in 2025</li>
+                <li>Test assesses knowledge and competencies</li>
+                <li>Bypass training requirement if qualified and pass test</li>
+                <li>Contact DBH for waiver application process</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Fees</h2>
+
+            <h3>Cost Information</h3>
+            <p>Specific fee amounts were not publicly available. To obtain current fee information:</p>
+
+            <div class="contact-card">
+                <h4>Contact DBH for Fee Information</h4>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:dbh.peersupport@dc.gov">dbh.peersupport@dc.gov</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> (202) 673-4377
+                </div>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://dbh.dc.gov/service/peer-specialist-certification-program">dbh.dc.gov/peer-specialist-certification</a>
+                </div>
+            </div>
+
+            <h3>Likely Fee Categories</h3>
+            <ul>
+                <li>Application processing fee (if any)</li>
+                <li>Training fee (may be subsidized or free for DC residents)</li>
+                <li>Certification exam fee</li>
+                <li>Initial certification issuance fee</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Recertification Requirements</h2>
+
+            <h3>Recertification Cycle</h3>
+            <p><strong>Every Two Years</strong></p>
+
+            <h3>Continuing Education Requirements</h3>
+            <h4>20 Hours of Continuing Education Units (CEUs)</h4>
+            <ul>
+                <li>Must be completed within the two-year certification period</li>
+                <li>Required for recertification eligibility</li>
+            </ul>
+
+            <h3>Approved Continuing Education</h3>
+            <p>The Office of Consumer and Family Affairs (OCFA) publishes an annual list of:</p>
+            <ul>
+                <li>Approved classes</li>
+                <li>Seminars</li>
+                <li>Conferences</li>
+                <li>Workshops</li>
+                <li>Other activities related to mental health and recovery</li>
+            </ul>
+
+            <h3>Recertification Process</h3>
+            <ol>
+                <li>Track 20 hours of CEUs during certification period</li>
+                <li>Attend approved CE activities</li>
+                <li>Maintain certificates of completion</li>
+                <li>Submit recertification application before expiration</li>
+                <li>Provide CEU documentation</li>
+                <li>Pay recertification fee (if applicable)</li>
+                <li>Receive renewed certification</li>
+            </ol>
+        </div>
+
+        <div class="content-section">
+            <h2>2025 Training Schedule</h2>
+
+            <h3>Accessing 2025 Schedule</h3>
+
+            <h4>Primary Method: Visit DBH Website</h4>
+            <ul>
+                <li>URL: <a href="https://dbh.dc.gov/service/peer-specialist-certification-program">dbh.dc.gov/peer-specialist-certification</a></li>
+                <li>Look for "Class Schedule" section</li>
+                <li>Application deadlines listed for each session</li>
+                <li>Training dates provided for all three 2025 sessions</li>
+                <li>Waiver testing dates also listed</li>
+            </ul>
+
+            <h4>Contact DBH Directly:</h4>
+            <div class="contact-card">
+                <div class="contact-item">
+                    <strong>Phone:</strong> (202) 673-4377
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:dbh.peersupport@dc.gov">dbh.peersupport@dc.gov</a>
+                </div>
+                <p>Request 2025 training calendar and application deadlines</p>
+            </div>
+
+            <h4>In-Person Inquiry:</h4>
+            <ul>
+                <li>Visit: 64 New York Avenue, NE, 3rd Floor, Washington, DC 20002</li>
+                <li>Office hours: Check website or call ahead</li>
+                <li>Pick up application materials</li>
+                <li>Speak with staff about upcoming trainings</li>
+            </ul>
+
+            <h3>Application Strategy</h3>
+            <p>Since applications are competitive and ranked on points:</p>
+            <ol>
+                <li><strong>Apply Early:</strong> Submit application as soon as session is announced</li>
+                <li><strong>Quality Responses:</strong> Take time with essay questions</li>
+                <li><strong>Strong References:</strong> Choose references who can speak to your commitment</li>
+                <li><strong>Highlight Experience:</strong> Emphasize any peer-related training or experience</li>
+                <li><strong>Show Understanding:</strong> Demonstrate knowledge of recovery principles</li>
+                <li><strong>Professional Resume:</strong> Update and polish resume before submission</li>
+            </ol>
+        </div>
+
+        <div class="content-section">
+            <h2>Scope of Practice</h2>
+
+            <h3>What DC Certified Peer Specialists Do</h3>
+            <ul>
+                <li>Provide support based on lived experience</li>
+                <li>Share recovery journey appropriately</li>
+                <li>Model recovery principles and wellness</li>
+                <li>Advocate for individuals in recovery</li>
+                <li>Connect individuals to resources and services</li>
+                <li>Facilitate peer support activities</li>
+                <li>Promote hope, empowerment, and self-determination</li>
+                <li>Support individuals navigating behavioral health services</li>
+                <li>Provide family support (Family Peer Specialists)</li>
+                <li>Support youth in recovery (Youth Peer Specialists)</li>
+            </ul>
+
+            <h3>Practice Settings</h3>
+            <p>Certified Peer Specialists work throughout DC's behavioral health system:</p>
+            <ul>
+                <li>Community mental health centers</li>
+                <li>Substance use disorder treatment programs</li>
+                <li>Peer-run organizations</li>
+                <li>Recovery support centers</li>
+                <li>Hospital behavioral health units</li>
+                <li>Homeless services programs</li>
+                <li>Criminal justice settings</li>
+                <li>DBH-contracted provider organizations</li>
+                <li>Community-based organizations</li>
+            </ul>
+
+            <h3>Professional Responsibilities</h3>
+            <ul>
+                <li>Maintain ethical standards</li>
+                <li>Respect confidentiality</li>
+                <li>Practice within scope of peer support</li>
+                <li>Maintain professional boundaries</li>
+                <li>Participate in supervision</li>
+                <li>Complete continuing education</li>
+                <li>Model recovery and wellness</li>
+                <li>Document services appropriately</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Additional Resources</h2>
+
+            <h3>DC Government Resources</h3>
+            <div class="contact-card">
+                <h4>DC Department of Behavioral Health (DBH)</h4>
+                <div class="contact-item">
+                    <strong>Main Website:</strong> <a href="https://dbh.dc.gov">dbh.dc.gov</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Peer Specialist Program:</strong> <a href="https://dbh.dc.gov/service/peer-specialist-certification-program">dbh.dc.gov/peer-specialist-certification</a>
+                </div>
+                <div class="contact-item">
+                    <strong>DBH Training Institute:</strong> <a href="https://dbhtraininginstitute.networkofcare4elearning.org/">dbhtraininginstitute.networkofcare4elearning.org</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h4>Consumer Advocacy and Peer Support</h4>
+                <div class="contact-item">
+                    <strong>Information:</strong> <a href="https://dbh.dc.gov/service/consumer-advocacy-and-peer-support">dbh.dc.gov/consumer-advocacy-and-peer-support</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Consumer and Family Affairs:</strong> <a href="https://dbh.dc.gov/service/consumer-and-family-affairs-administration">dbh.dc.gov/consumer-and-family-affairs</a>
+                </div>
+            </div>
+
+            <h3>Professional Organizations</h3>
+            <div class="contact-card">
+                <h4>District of Columbia Addiction Professionals Consortium (DCAPC)</h4>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://dcapcboard.org/">dcapcboard.org</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Certifications:</strong> <a href="https://dcapcboard.org/certifications-2/">dcapcboard.org/certifications</a>
+                </div>
+                <p>Supports addiction professionals including peer specialists</p>
+            </div>
+
+            <div class="contact-card">
+                <h4>National Alliance on Mental Illness DC (NAMI DC)</h4>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.namidc.org">namidc.org</a>
+                </div>
+                <p>Local mental health resources, support and education programs</p>
+            </div>
+
+            <div class="contact-card">
+                <h4>Copeland Center</h4>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://copelandcenter.com/peer-specialists/district-columbia">copelandcenter.com/peer-specialists/district-columbia</a>
+                </div>
+                <p>DC-specific peer specialist resources and training</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Application Checklist</h2>
+
+            <p>Before submitting your application:</p>
+
+            <ul style="list-style-type: none; margin-left: 0;">
+                <li>☐ Verify DC residency (have proof ready)</li>
+                <li>☐ Confirm 2+ years of recovery</li>
+                <li>☐ Locate high school diploma/GED/college degree</li>
+                <li>☐ Request two current letters of reference (within 1 year)</li>
+                <li>☐ Update resume with relevant experience</li>
+                <li>☐ Review application essay questions</li>
+                <li>☐ Draft thoughtful essay responses</li>
+                <li>☐ Proofread all written materials</li>
+                <li>☐ Gather all required documents</li>
+                <li>☐ Complete online application thoroughly</li>
+                <li>☐ Submit application by deadline</li>
+                <li>☐ Follow up to confirm receipt</li>
+            </ul>
+
+            <h3>During Training:</h3>
+            <ul style="list-style-type: none; margin-left: 0;">
+                <li>☐ Attend all training sessions</li>
+                <li>☐ Participate actively in activities</li>
+                <li>☐ Complete all assignments</li>
+                <li>☐ Arrange practicum placement</li>
+                <li>☐ Complete 80-hour field practicum</li>
+                <li>☐ Document practicum hours</li>
+                <li>☐ Prepare for certification exam</li>
+                <li>☐ Pass certification exam</li>
+                <li>☐ Receive certification from DBH</li>
+            </ul>
+
+            <h3>After Certification:</h3>
+            <ul style="list-style-type: none; margin-left: 0;">
+                <li>☐ Track continuing education hours</li>
+                <li>☐ Attend approved CE activities</li>
+                <li>☐ Maintain certificates of completion</li>
+                <li>☐ Submit recertification before expiration</li>
+                <li>☐ Stay current on peer support best practices</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Frequently Asked Questions</h2>
+
+            <h3>Q: How much does the training cost?</h3>
+            <p><strong>A:</strong> Contact DBH at (202) 673-4377 or dbh.peersupport@dc.gov for current fee information.</p>
+
+            <h3>Q: What if I'm not selected for training?</h3>
+            <p><strong>A:</strong> You can reapply for the next training session. Strengthen your application and try again.</p>
+
+            <h3>Q: Can I get certified if I moved to DC recently?</h3>
+            <p><strong>A:</strong> You must be a DC resident. Proof of residency required. Length of residency requirements may vary - contact DBH.</p>
+
+            <h3>Q: What's the difference between Peer Specialist and Family Peer Specialist?</h3>
+            <p><strong>A:</strong> Peer Specialists have personal lived experience. Family Peer Specialists are family members of individuals with behavioral health challenges. Different focus and training.</p>
+
+            <h3>Q: What if I only have one year of recovery?</h3>
+            <p><strong>A:</strong> DC requires two years minimum. Continue your recovery journey and apply when you meet the requirement.</p>
+
+            <h3>Q: Can I use my certification in other states?</h3>
+            <p><strong>A:</strong> Possibly, depending on reciprocity agreements. Contact receiving state's certification body. May need additional requirements.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Core Values</strong></p>
+        <p>Supporting Peer Support Professionals Nationwide</p>
+        <p style="margin-top: 1rem; font-size: 9pt; opacity: 0.9;">
+            Disclaimer: This information is provided for educational purposes only. Requirements and procedures may change.
+            Always verify current requirements with the DC Department of Behavioral Health directly at (202) 673-4377.
+        </p>
+        <p style="font-size: 9pt; opacity: 0.9;">Last Updated: November 2025</p>
+    </div>
+</body>
+</html>

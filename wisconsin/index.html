@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wisconsin - Certified Peer Specialist (CPS) | Core Values</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f8f9fa;
+        }
+
+        .header {
+            background-color: #1d4486;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 20pt;
+            margin-bottom: 0.5rem;
+            letter-spacing: 1px;
+        }
+
+        .header .subtitle {
+            font-size: 14pt;
+            opacity: 0.95;
+        }
+
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: #1d4486;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 11pt;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #0f2442;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        .content-section {
+            background-color: white;
+            margin-bottom: 2rem;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 16pt;
+            color: #1d4486;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #1d4486;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', cursive;
+            font-size: 14pt;
+            color: #1d4486;
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1d4486;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: 0.5px;
+        }
+
+        ul, ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1d4486;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            margin-top: 1rem;
+        }
+
+        .cta-button:hover {
+            background-color: #0f2442;
+        }
+
+        .info-box {
+            background-color: #f0f4f8;
+            border-left: 4px solid #1d4486;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .contact-card {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin: 1rem 0;
+        }
+
+        .contact-card h4 {
+            margin-top: 0;
+        }
+
+        .contact-item {
+            margin: 0.5rem 0;
+        }
+
+        .contact-item strong {
+            display: inline-block;
+            width: 100px;
+            color: #1d4486;
+        }
+
+        .exam-highlight {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+        }
+
+        table th {
+            background-color: #1d4486;
+            color: white;
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 500;
+        }
+
+        table td {
+            padding: 0.75rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .footer {
+            background-color: #1d4486;
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            font-size: 10pt;
+        }
+
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 18pt;
+            }
+
+            .container {
+                padding: 1rem;
+            }
+
+            .content-section {
+                padding: 1.5rem;
+            }
+
+            .contact-item strong {
+                display: block;
+                width: 100%;
+                margin-bottom: 0.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Wisconsin</h1>
+        <div class="subtitle">Certified Peer Specialist (CPS) Certification</div>
+    </div>
+
+    <nav>
+        <a href="../index.html">← Back to State Directory</a>
+    </nav>
+
+    <div class="container">
+        <div class="content-section">
+            <h2>Overview</h2>
+            <p>Wisconsin has promoted professional peer support since 2010 through the Division of Care and Treatment Services. The state offers Certified Peer Specialist (CPS) certification for individuals with lived experience of mental health or substance use disorders who wish to provide peer support services. Training is coordinated by the Wisconsin Peer Specialist Employment Initiative and is provided <strong>FREE of charge</strong>.</p>
+
+            <div class="info-box">
+                <h4>Training is Free!</h4>
+                <p>Wisconsin provides <strong>FREE training</strong> for Certified Peer Specialists. The only cost is the <strong>$60 exam registration fee</strong>.</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Official Certification Names</h2>
+            <ul>
+                <li><strong>Certified Peer Specialist (CPS)</strong> - For individuals with lived experience</li>
+                <li><strong>Certified Parent Peer Specialist (CPPS)</strong> - For parents/guardians of children with lived experience</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Certifying Organizations</h2>
+
+            <p>Three entities work together for Wisconsin peer specialist certification:</p>
+
+            <div class="contact-card">
+                <h4>1. Wisconsin Department of Health Services (DHS)</h4>
+                <p>Division of Care and Treatment Services</p>
+                <ul>
+                    <li>Oversees the peer specialist certification program</li>
+                    <li>Sets certification standards and requirements</li>
+                </ul>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.dhs.wisconsin.gov/peer-services/peer-specialists.htm">dhs.wisconsin.gov/peer-specialists</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:DHSDCTSPeerSpecialist@dhs.wisconsin.gov">DHSDCTSPeerSpecialist@dhs.wisconsin.gov</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h4>2. Wisconsin Peer Specialists (Access to Independence)</h4>
+                <p>Service of Access to Independence under DHS grant</p>
+                <ul>
+                    <li>Coordinates free training courses statewide</li>
+                    <li>Manages training applications and schedules</li>
+                </ul>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.wicps.org">wicps.org</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> 608-242-8484
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h4>3. UW-Milwaukee School of Continuing Education</h4>
+                <ul>
+                    <li>Administers online certification exams</li>
+                    <li>Handles exam registration and processing</li>
+                    <li>Manages recertification process</li>
+                </ul>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://uwm.edu/sce/">uwm.edu/sce</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Eligibility Requirements</h2>
+
+            <h3>For Certified Peer Specialist (CPS)</h3>
+            <ol>
+                <li><strong>Age:</strong> At least 18 years old</li>
+                <li><strong>Education:</strong> High school diploma or G.E.D. certificate</li>
+                <li><strong>Lived Experience:</strong> Must have own lived experience of mental health and/or substance use challenges</li>
+                <li><strong>Recovery Status:</strong> Must be in recovery (timeframe not specified, but must demonstrate recovery)</li>
+                <li><strong>Training:</strong> Complete approved CPS training course</li>
+                <li><strong>Examination:</strong> Pass the CPS certification exam with 85% or higher</li>
+            </ol>
+
+            <h3>For Certified Parent Peer Specialist</h3>
+            <p>Same requirements as CPS, but focused on parents/guardians of children with mental health or substance use challenges.</p>
+        </div>
+
+        <div class="content-section">
+            <h2>Training Requirements</h2>
+
+            <h3>Training Overview</h3>
+            <ul>
+                <li><strong>Duration:</strong> Multi-week course (specific hours vary by offering)</li>
+                <li><strong>Cost:</strong> FREE - No cost for training</li>
+                <li><strong>Format:</strong> Virtual (Zoom-based) or in-person options available</li>
+                <li><strong>Capacity:</strong> Maximum of 50 applications accepted per training course</li>
+                <li><strong>Curriculum:</strong> Knowledge and skills necessary for effective peer support</li>
+            </ul>
+
+            <h3>Training Content</h3>
+            <p>Training builds upon participant experience with instruction in:</p>
+            <ul>
+                <li>Foundational competencies consistent with SAMHSA national standards</li>
+                <li>Peer support principles and practices</li>
+                <li>Recovery-oriented approaches</li>
+                <li>Ethical standards and boundaries</li>
+                <li>Wellness and self-care</li>
+                <li>Advocacy and empowerment</li>
+                <li>Cultural competency</li>
+            </ul>
+
+            <div class="info-box">
+                <h4>Competitive Selection Process</h4>
+                <p><strong>Applications are ranked on a points basis:</strong></p>
+                <ul>
+                    <li>Previous peer-related training</li>
+                    <li>Previous peer-related job experience</li>
+                    <li>Quality of essay responses</li>
+                    <li>Demonstrated desire to work as certified peer specialist</li>
+                    <li>Understanding of mental health and substance use recovery principles</li>
+                    <li>Support for many pathways to wellness</li>
+                </ul>
+                <p>Facilitators virtually interview up to 30 applicants. Apply early when applications open!</p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Examination Requirements</h2>
+
+            <div class="exam-highlight">
+                <h3>2025 Exam Dates</h3>
+                <ul>
+                    <li><strong>September 24, 2025</strong></li>
+                    <li><strong>November 12, 2025</strong></li>
+                </ul>
+                <p><em>Additional dates may be added - check wicps.org for updates</em></p>
+            </div>
+
+            <h3>Exam Details</h3>
+            <ul>
+                <li><strong>Format:</strong> Online, remote examination</li>
+                <li><strong>Duration:</strong> Three (3) hours allowed</li>
+                <li><strong>Passing Score:</strong> 85% or higher</li>
+                <li><strong>Administrator:</strong> UW-Milwaukee School of Continuing Education</li>
+                <li><strong>Registration Fee:</strong> $60.00</li>
+            </ul>
+
+            <h3>Exam Registration Process</h3>
+            <ol>
+                <li>Complete approved training course</li>
+                <li>Register through UW-Milwaukee School of Continuing Education</li>
+                <li>Pay $60 exam registration fee</li>
+                <li>Take exam online at scheduled time</li>
+                <li>Receive results</li>
+                <li>If passing (85%+), certification awarded</li>
+            </ol>
+        </div>
+
+        <div class="content-section">
+            <h2>Fees</h2>
+
+            <h3>Initial Certification Costs</h3>
+            <table>
+                <tr>
+                    <th>Item</th>
+                    <th>Cost</th>
+                </tr>
+                <tr>
+                    <td>Training</td>
+                    <td><strong>FREE</strong></td>
+                </tr>
+                <tr>
+                    <td>Exam Registration</td>
+                    <td><strong>$60.00</strong></td>
+                </tr>
+                <tr>
+                    <td>Certification Issuance</td>
+                    <td>Included with exam fee</td>
+                </tr>
+                <tr>
+                    <td><strong>Total Initial Cost</strong></td>
+                    <td><strong>$60.00</strong></td>
+                </tr>
+            </table>
+        </div>
+
+        <div class="content-section">
+            <h2>Recertification Requirements</h2>
+
+            <h3>Recertification Cycle</h3>
+            <p><strong>Every Two Years</strong> from the year you passed the exam or last recertified</p>
+
+            <h3>Recertification Deadline</h3>
+            <p><strong>September 30th</strong> (every two years from certification date)</p>
+
+            <h3>Continuing Education Requirements</h3>
+            <h4>20 Hours of Professional Development</h4>
+            <ul>
+                <li>Must be completed during the two-year certification period</li>
+                <li>Must be relevant to peer support practice</li>
+                <li>Documentation required for recertification</li>
+            </ul>
+
+            <h3>Recertification Fees</h3>
+            <table>
+                <tr>
+                    <th>Type</th>
+                    <th>Fee</th>
+                </tr>
+                <tr>
+                    <td>On-Time Recertification</td>
+                    <td>$55.00</td>
+                </tr>
+                <tr>
+                    <td>Grace Period (1 month after deadline)</td>
+                    <td>$55.00 (no penalty)</td>
+                </tr>
+                <tr>
+                    <td>Late Recertification (within 6 months)</td>
+                    <td>$80.00 ($55 + $25 late fee)</td>
+                </tr>
+                <tr>
+                    <td>After 6 months</td>
+                    <td>May need to reapply and retake exam</td>
+                </tr>
+            </table>
+
+            <h3>Recertification Process</h3>
+            <ol>
+                <li>Track 20 hours of professional development throughout certification period</li>
+                <li>Submit recertification application by September 30th</li>
+                <li>Submit documentation of continuing education</li>
+                <li>Pay recertification fee ($55)</li>
+                <li>Receive renewed certification</li>
+            </ol>
+
+            <p><strong>Recertification Application:</strong> <a href="https://uwm.edu/sce/wisconsin-certified-peer-specialist-recertification-application/">uwm.edu/sce/recertification</a></p>
+        </div>
+
+        <div class="content-section">
+            <h2>Training Providers and Sponsors</h2>
+
+            <h3>Primary Training Coordinator</h3>
+            <div class="contact-card">
+                <h4>Wisconsin Peer Specialist Employment Initiative</h4>
+                <p>Service of Access to Independence, Inc.</p>
+                <ul>
+                    <li>Coordinates all free CPS training statewide</li>
+                    <li>Under grant from Division of Care and Treatment Services</li>
+                </ul>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.wicps.org">wicps.org</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong> 608-242-8484
+                </div>
+            </div>
+
+            <h3>County-Sponsored Training Programs</h3>
+            <p>Training programs are sponsored by various counties throughout Wisconsin:</p>
+            <ul>
+                <li><strong>Waukesha County</strong> Department of Health and Human Services</li>
+                <li><strong>Milwaukee County</strong> - Partners with Wisconsin Community Services</li>
+                <li><strong>Newcap, Inc.</strong> - Sponsored trainings</li>
+                <li><strong>Southwest Wisconsin Workforce Development Board - PH2</strong></li>
+                <li>Various other counties sponsor trainings throughout the year</li>
+            </ul>
+
+            <h3>Additional Organizations</h3>
+            <div class="contact-card">
+                <h4>Chrysalis (Madison, WI)</h4>
+                <p>CPS Learning Community (CPS-LC)</p>
+                <ul>
+                    <li>Technical assistance and consulting</li>
+                    <li>Support for CPS integration in organizations</li>
+                    <li>Organizational support and CPS role development</li>
+                </ul>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://workwithchrysalis.org/programs/cps-lc/">workwithchrysalis.org/cps-lc</a>
+                </div>
+            </div>
+
+            <div class="contact-card">
+                <h4>Wisconsin Peer Recovery Centers</h4>
+                <p>Support recovery and peer services statewide</p>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.wisconsinprc.org">wisconsinprc.org</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>2025 Training Schedule</h2>
+
+            <h3>How to Access Training Schedule</h3>
+
+            <h4>Primary Source: wicps.org</h4>
+            <p>Visit <a href="https://www.wicps.org">wicps.org</a> and look for:</p>
+            <ul>
+                <li>Upcoming training courses</li>
+                <li>Application deadlines</li>
+                <li>Training dates and formats</li>
+                <li>Sponsoring organizations</li>
+                <li>Application links</li>
+            </ul>
+
+            <h3>Application Process for Training</h3>
+
+            <h4>Step 1: Monitor wicps.org</h4>
+            <ul>
+                <li>Training announcements posted regularly</li>
+                <li>Applications open several weeks before training</li>
+            </ul>
+
+            <h4>Step 2: Complete Application Quickly</h4>
+            <ul>
+                <li>Maximum 50 applications per course</li>
+                <li>First-come, first-served after competitive review</li>
+                <li>Applications close when cap reached</li>
+            </ul>
+
+            <h4>Step 3: Wait for Selection</h4>
+            <ul>
+                <li>Virtual interviews conducted</li>
+                <li>Up to 30 participants selected</li>
+                <li>Acceptance notification sent</li>
+            </ul>
+
+            <h4>Step 4: Attend Training</h4>
+            <ul>
+                <li>Virtual (Zoom) or in-person format</li>
+                <li>Complete all sessions</li>
+                <li>Pass training requirements</li>
+            </ul>
+
+            <h4>Step 5: Register for Exam</h4>
+            <ul>
+                <li>After completing training</li>
+                <li>Register through UW-Milwaukee</li>
+                <li>Take exam on scheduled date</li>
+            </ul>
+
+            <a href="https://www.wicps.org" class="cta-button">Check Current Training Schedule</a>
+        </div>
+
+        <div class="content-section">
+            <h2>Scope of Practice</h2>
+
+            <h3>What Certified Peer Specialists Do</h3>
+            <p>According to Wisconsin statute (DHS 75.03(22)), a certified peer specialist:</p>
+            <ul>
+                <li>Has lived experience of mental illness or substance use disorders, or both</li>
+                <li>Completed formal training in peer specialist model</li>
+                <li>Holds department certification</li>
+                <li>Provides peer support based on lived experience</li>
+                <li>Works in mental health or substance use disorder support settings</li>
+            </ul>
+
+            <h3>What Certified Peer Specialists Are NOT</h3>
+            <ul>
+                <li><strong>Not clinical staff</strong> - Cannot provide clinical services</li>
+                <li><strong>Not therapists</strong> - Do not provide therapy</li>
+                <li><strong>Not case managers</strong> - Do not provide case management (unless separately qualified)</li>
+                <li><strong>Not medical professionals</strong> - Do not provide medical advice</li>
+            </ul>
+
+            <h3>Practice Settings</h3>
+            <p>Certified Peer Specialists work in:</p>
+            <ul>
+                <li>Community mental health centers</li>
+                <li>Substance use disorder treatment programs</li>
+                <li>Peer-run organizations</li>
+                <li>Recovery community centers</li>
+                <li>Hospitals and healthcare settings</li>
+                <li>Crisis programs</li>
+                <li>Supported housing programs</li>
+                <li>Correctional facilities (specialized training)</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>Contact Directory</h2>
+
+            <h3>Training Questions</h3>
+            <div class="contact-card">
+                <h4>Wisconsin Peer Specialists (Access to Independence)</h4>
+                <div class="contact-item">
+                    <strong>Phone:</strong> 608-242-8484
+                </div>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.wicps.org">wicps.org</a>
+                </div>
+                <p><em>For: Training applications, schedules, selection questions</em></p>
+            </div>
+
+            <h3>Certification Questions</h3>
+            <div class="contact-card">
+                <h4>Wisconsin Department of Health Services</h4>
+                <div class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:DHSDCTSPeerSpecialist@dhs.wisconsin.gov">DHSDCTSPeerSpecialist@dhs.wisconsin.gov</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://www.dhs.wisconsin.gov/peer-services">dhs.wisconsin.gov/peer-services</a>
+                </div>
+                <p><em>For: Certification requirements, scope of practice, regulations</em></p>
+            </div>
+
+            <h3>Exam Questions</h3>
+            <div class="contact-card">
+                <h4>UW-Milwaukee School of Continuing Education</h4>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://uwm.edu/sce/">uwm.edu/sce</a>
+                </div>
+                <p>Search: Wisconsin Peer Specialist Certification</p>
+                <p><em>For: Exam registration, recertification, exam results</em></p>
+            </div>
+
+            <h3>Organizational Support</h3>
+            <div class="contact-card">
+                <h4>Chrysalis CPS Learning Community</h4>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://workwithchrysalis.org/programs/cps-lc/">workwithchrysalis.org/cps-lc</a>
+                </div>
+                <p><em>For: Organizational integration, CPS role development</em></p>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2>Additional Resources</h2>
+
+            <h3>Official State Resources</h3>
+            <ul>
+                <li><strong>Peer Services Main Page:</strong> <a href="https://www.dhs.wisconsin.gov/peer-services/index.htm">dhs.wisconsin.gov/peer-services</a></li>
+                <li><strong>Peer Specialists Information:</strong> <a href="https://www.dhs.wisconsin.gov/peer-services/peer-specialists.htm">dhs.wisconsin.gov/peer-specialists</a></li>
+            </ul>
+
+            <h3>DHS Publications</h3>
+            <ul>
+                <li><strong>Wisconsin Certified Peer Specialist Scope of Practice Summary (P-00972)</strong></li>
+                <li>Available at: <a href="https://www.dhs.wisconsin.gov/publications/p00972.pdf">dhs.wisconsin.gov/publications/p00972.pdf</a></li>
+            </ul>
+
+            <h3>Administrative Code References</h3>
+            <ul>
+                <li><strong>DHS 75.03(22)</strong> - Definition of Certified Peer Specialist</li>
+                <li><strong>DHS 72.09(3)</strong> - Peer specialist services in treatment programs</li>
+                <li>Access Wisconsin Administrative Code at: <a href="https://docs.legis.wisconsin.gov/code/admin_code/dhs/">docs.legis.wisconsin.gov/code/admin_code/dhs</a></li>
+            </ul>
+
+            <h3>Professional Development</h3>
+            <div class="contact-card">
+                <h4>Copeland Center</h4>
+                <p>Wisconsin-specific resources, training and technical assistance</p>
+                <div class="contact-item">
+                    <strong>Website:</strong> <a href="https://copelandcenter.com/peer-specialists/wisconsin">copelandcenter.com/peer-specialists/wisconsin</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Core Values</strong></p>
+        <p>Supporting Peer Support Professionals Nationwide</p>
+        <p style="margin-top: 1rem; font-size: 9pt; opacity: 0.9;">
+            Disclaimer: This information is provided for educational purposes only. Requirements and procedures may change.
+            Always verify current requirements with Wisconsin Department of Health Services and Wisconsin Peer Specialists.
+        </p>
+        <p style="font-size: 9pt; opacity: 0.9;">Last Updated: November 2025</p>
+    </div>
+</body>
+</html>
