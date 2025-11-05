@@ -1,0 +1,1393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Peer Support Specialist Certification Guide - All 51 States</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            color: #333333;
+            line-height: 1.6;
+            background: #f5f5f5;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 28pt;
+            font-weight: 300;
+            color: white;
+            margin: 0;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20pt;
+            font-weight: 300;
+            color: #1d4486;
+            margin-bottom: 20px;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16pt;
+            font-weight: 300;
+            color: #1d4486;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            text-transform: uppercase;
+            color: #1d4486;
+            font-weight: 700;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        }
+
+        header {
+            background: #1d4486;
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        header p {
+            font-size: 14pt;
+            margin-top: 10px;
+            opacity: 0.95;
+        }
+
+        .intro {
+            padding: 40px;
+            background: #f8f9fa;
+            border-bottom: 3px solid #1d4486;
+        }
+
+        .search-filter {
+            padding: 30px 40px;
+            background: white;
+            border-bottom: 2px solid #e0e0e0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .search-box {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .search-box input {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px 20px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 11pt;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .search-box input:focus {
+            outline: none;
+            border-color: #1d4486;
+            box-shadow: 0 0 0 3px rgba(29, 68, 134, 0.1);
+        }
+
+        .filter-buttons {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            padding: 10px 20px;
+            border: 2px solid #1d4486;
+            background: white;
+            color: #1d4486;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 11pt;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+            transition: all 0.3s;
+        }
+
+        .filter-btn:hover, .filter-btn.active {
+            background: #1d4486;
+            color: white;
+        }
+
+        .states-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 25px;
+            padding: 40px;
+        }
+
+        .state-card {
+            background: white;
+            border: 2px solid #e0e0e0;
+            padding: 25px;
+            transition: all 0.3s;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .state-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: #1d4486;
+            transform: scaleX(0);
+            transition: transform 0.3s;
+        }
+
+        .state-card:hover {
+            border-color: #1d4486;
+            box-shadow: 0 5px 20px rgba(29, 68, 134, 0.15);
+            transform: translateY(-3px);
+        }
+
+        .state-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .state-card h3 {
+            font-size: 18pt;
+            margin-bottom: 15px;
+        }
+
+        .credential-badge {
+            background: #1d4486;
+            color: white;
+            padding: 6px 14px;
+            font-size: 10pt;
+            font-weight: 700;
+            display: inline-block;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .info-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 10pt;
+        }
+
+        .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .info-label {
+            font-weight: 700;
+            color: #555;
+        }
+
+        .info-value {
+            color: #333;
+            text-align: right;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 6px;
+            font-weight: 700;
+        }
+
+        .free-tag {
+            background: #28a745;
+            color: white;
+            padding: 3px 10px;
+            font-size: 9pt;
+            font-weight: 700;
+            border-radius: 3px;
+        }
+
+        .link-button {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 25px;
+            background: #1d4486;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            transition: all 0.3s;
+            border-radius: 5px;
+        }
+
+        .link-button:hover {
+            background: #152f5e;
+            transform: scale(1.02);
+        }
+
+        .stats-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+            background: #f8f9fa;
+        }
+
+        .stat-card {
+            background: #1d4486;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .stat-number {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 48pt;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .stat-label {
+            font-size: 12pt;
+            opacity: 0.95;
+        }
+
+        .comparison-section {
+            padding: 40px;
+            background: white;
+        }
+
+        .table-container {
+            overflow-x: auto;
+            background: white;
+            border: 2px solid #e0e0e0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        th {
+            background: #1d4486;
+            color: white;
+            padding: 15px;
+            text-align: left;
+            font-weight: 700;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: #152f5e;
+        }
+
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        footer {
+            background: #1d4486;
+            color: white;
+            padding: 30px 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+            font-size: 10pt;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24pt;
+            }
+
+            .states-grid {
+                grid-template-columns: 1fr;
+                padding: 20px;
+            }
+
+            .search-box {
+                flex-direction: column;
+            }
+
+            .search-box input {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Peer Support Specialist Certification Guide</h1>
+            <p>Comprehensive Resource for Addiction Recovery Peer Support Certification Across All 51 U.S. States & Territories</p>
+        </header>
+
+        <div class="intro">
+            <h2>About This Guide</h2>
+            <p>This comprehensive guide provides detailed information about becoming a certified peer support specialist for addiction recovery in all 50 states plus the District of Columbia. Each state has its own certification process, requirements, and training providers. Use the search and filter tools below to find information specific to your state.</p>
+            <p style="margin-top: 10px;"><strong>Last Updated:</strong> November 2025 | <strong>Research Completed:</strong> All 51 jurisdictions</p>
+        </div>
+
+        <div class="stats-section">
+            <div class="stat-card">
+                <div class="stat-number">51</div>
+                <div class="stat-label">States Researched</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">40-80</div>
+                <div class="stat-label">Typical Training Hours</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">1-3</div>
+                <div class="stat-label">Years Recovery Required</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-number">$0-350</div>
+                <div class="stat-label">Typical Cost Range</div>
+            </div>
+        </div>
+
+        <div class="search-filter">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search by state name, credential type, or keyword...">
+            </div>
+            <div class="filter-buttons" style="margin-top: 15px;">
+                <button class="filter-btn active" onclick="filterStates('all')">All States</button>
+                <button class="filter-btn" onclick="filterStates('free')">Free/Low Cost</button>
+                <button class="filter-btn" onclick="filterStates('icrc')">IC&RC Certified</button>
+                <button class="filter-btn" onclick="filterStates('short')">Short Recovery Time (1 year)</button>
+            </div>
+        </div>
+
+        <div class="states-grid" id="statesGrid">
+            <!-- Alabama -->
+            <div class="state-card" data-state="alabama" data-cost="low" data-recovery="2">
+                <h3>Alabama</h3>
+                <div class="credential-badge">CRSS - Certified Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">40 hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">COSA-NCADD</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">March 2025 Conference</span>
+                </div>
+                <a href="alabama/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Alaska -->
+            <div class="state-card" data-state="alaska" data-cost="free" data-recovery="1">
+                <h3>Alaska</h3>
+                <div class="credential-badge">PSP - Peer Support Professional</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">50 CE hours <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">1 year</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Alaska Behavioral Health</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">July 28-August 1, 2025</span>
+                </div>
+                <a href="alaska/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Arizona -->
+            <div class="state-card" data-state="arizona" data-cost="low" data-recovery="varies" data-tags="icrc">
+                <h3>Arizona</h3>
+                <div class="credential-badge">PRSS/CPRS - Peer Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">AHCCCS-approved + IC&RC exam</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$200 ($50 app + $150 exam)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">ABCAC / IC&RC</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Oct 3, 2025 (Scottsdale Recovery)</span>
+                </div>
+                <a href="arizona/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Arkansas -->
+            <div class="state-card" data-state="arkansas" data-cost="low" data-recovery="2">
+                <h3>Arkansas</h3>
+                <div class="credential-badge">PRSS - Peer Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">3-tier system (30-46 hours)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years continuous</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">NAADAC / AR.gov</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Application:</span>
+                    <span class="info-value">www.ar.gov/recovery</span>
+                </div>
+                <a href="arkansas/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- California -->
+            <div class="state-card" data-state="california" data-cost="varies" data-recovery="2">
+                <h3>California</h3>
+                <div class="credential-badge">MPSS - Medi-Cal Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">80 hours + state exam</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">Lived experience (varies)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Exam:</span>
+                    <span class="info-value">2.5 hours, 120 questions, 17 competencies</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Providers:</span>
+                    <span class="info-value">Multiple statewide (NAMI CA, CCSF, LMU)</span>
+                </div>
+                <a href="california/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Colorado -->
+            <div class="state-card" data-state="colorado" data-cost="varies" data-recovery="1">
+                <h3>Colorado</h3>
+                <div class="credential-badge">PSP - Peer Support Professional</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">60 hours + 500 work hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">1 year</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Important:</span>
+                    <span class="info-value highlight">Jan 1, 2026 Medicaid deadline</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Jan 12, 2025 (CMWN)</span>
+                </div>
+                <a href="colorado/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Connecticut -->
+            <div class="state-card" data-state="connecticut" data-cost="low" data-recovery="varies">
+                <h3>Connecticut</h3>
+                <div class="credential-badge">RSS/CPRS - Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">80 hours (RSS) or 5-day intensive (CPRS)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$200 (RSS)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Providers:</span>
+                    <span class="info-value">Advocacy Unlimited (RSS), CCAR (CPRS)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Apply Nov 1, 2025 for April 2026</span>
+                </div>
+                <a href="connecticut/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Delaware -->
+            <div class="state-card" data-state="delaware" data-cost="free" data-recovery="1">
+                <h3>Delaware</h3>
+                <div class="credential-badge">CRPS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">46 hours (9 days) <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Experience:</span>
+                    <span class="info-value">500 hours + 1,000-word essay</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">MHA Delaware</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Frequency:</span>
+                    <span class="info-value">Twice yearly, NO COST</span>
+                </div>
+                <a href="delaware/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- District of Columbia -->
+            <div class="state-card" data-state="district_of_columbia" data-cost="varies" data-recovery="2">
+                <h3>District of Columbia</h3>
+                <div class="credential-badge">Certified Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">80-hour practicum required</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years (strict)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Requirements:</span>
+                    <span class="info-value">Must be DC resident</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">3 sessions scheduled</span>
+                </div>
+                <a href="district_of_columbia/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Florida -->
+            <div class="state-card" data-state="florida" data-cost="varies" data-recovery="varies">
+                <h3>Florida</h3>
+                <div class="credential-badge">CRPS - Certified Recovery Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">Florida Certification Board approved</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Providers:</span>
+                    <span class="info-value">Multiple statewide providers</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Florida Certification Board</span>
+                </div>
+                <a href="florida/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Kansas -->
+            <div class="state-card" data-state="kansas" data-cost="free" data-recovery="1">
+                <h3>Kansas</h3>
+                <div class="credential-badge">KCPM - Kansas Certified Peer Mentor</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">2-level system <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">1 year</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Kansas DADS</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Renewal:</span>
+                    <span class="info-value">Annual (6 CE hours)</span>
+                </div>
+                <a href="kansas/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- New Jersey -->
+            <div class="state-card" data-state="new_jersey" data-cost="free" data-recovery="2">
+                <h3>New Jersey</h3>
+                <div class="credential-badge">CPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">46 hours <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years, age 21+</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Experience:</span>
+                    <span class="info-value">500 hours clinical training</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Sept 9 - Oct 30 (virtual)</span>
+                </div>
+                <a href="new_jersey/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Georgia -->
+            <div class="state-card" data-state="georgia" data-cost="varies" data-recovery="varies">
+                <h3>Georgia</h3>
+                <div class="credential-badge">CPSS - Certified Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">State-approved curriculum</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Georgia Certification Board</span>
+                </div>
+                <a href="georgia/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Hawaii -->
+            <div class="state-card" data-state="hawaii" data-cost="varies" data-recovery="varies">
+                <h3>Hawaii</h3>
+                <div class="credential-badge">PSS - Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">State-approved training required</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Hawaii Dept. of Health</span>
+                </div>
+                <a href="hawaii/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Idaho -->
+            <div class="state-card" data-state="idaho" data-cost="varies" data-recovery="varies">
+                <h3>Idaho</h3>
+                <div class="credential-badge">CPSS - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">State-approved curriculum</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Idaho Dept. of Health and Welfare</span>
+                </div>
+                <a href="idaho/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Illinois -->
+            <div class="state-card" data-state="illinois" data-cost="varies" data-recovery="varies">
+                <h3>Illinois</h3>
+                <div class="credential-badge">CRSS - Certified Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">100 hours + 300 internship</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Illinois Certification Board</span>
+                </div>
+                <a href="illinois/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Indiana -->
+            <div class="state-card" data-state="indiana" data-cost="free" data-recovery="varies">
+                <h3>Indiana</h3>
+                <div class="credential-badge">CPSP - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value"><span class="free-tag">FREE</span> training & certification</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Indiana Certification Board</span>
+                </div>
+                <a href="indiana/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Iowa -->
+            <div class="state-card" data-state="iowa" data-cost="varies" data-recovery="varies">
+                <h3>Iowa</h3>
+                <div class="credential-badge">PRS - Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Feb & Nov 2025 (UI training)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Iowa Dept. of Public Health</span>
+                </div>
+                <a href="iowa/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Kentucky -->
+            <div class="state-card" data-state="kentucky" data-cost="low" data-recovery="varies">
+                <h3>Kentucky</h3>
+                <div class="credential-badge">KPS - Kentucky Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">30 hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">In recovery (no minimum)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$65-$350</span>
+                </div>
+                <a href="kentucky/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Louisiana -->
+            <div class="state-card" data-state="louisiana" data-cost="varies" data-recovery="1">
+                <h3>Louisiana</h3>
+                <div class="credential-badge">PSS - Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">76 hours (2 weeks)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">12 months</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Renewal:</span>
+                    <span class="info-value">Annual (10 CEUs)</span>
+                </div>
+                <a href="louisiana/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Maine -->
+            <div class="state-card" data-state="maine" data-cost="varies" data-recovery="varies">
+                <h3>Maine</h3>
+                <div class="credential-badge">CIPSS - Certified Intentional Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">8 days IPS methodology</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">New 2025:</span>
+                    <span class="info-value highlight">Registration portal launched</span>
+                </div>
+                <a href="maine/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Maryland -->
+            <div class="state-card" data-state="maryland" data-cost="varies" data-recovery="2" data-tags="icrc">
+                <h3>Maryland</h3>
+                <div class="credential-badge">CPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">50 hours (NEW 2025)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">New Feature:</span>
+                    <span class="info-value highlight">Harm Reduction domain 2025</span>
+                </div>
+                <a href="maryland/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Massachusetts -->
+            <div class="state-card" data-state="massachusetts" data-cost="varies" data-recovery="varies">
+                <h3>Massachusetts</h3>
+                <div class="credential-badge">CARC - Certified Addictions Recovery Coach</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">Varies by pathway</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Note:</span>
+                    <span class="info-value">Separate MH vs. SUD pathways</span>
+                </div>
+                <a href="massachusetts/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Michigan -->
+            <div class="state-card" data-state="michigan" data-cost="varies" data-recovery="2" data-tags="icrc">
+                <h3>Michigan</h3>
+                <div class="credential-badge">CPRM - Certified Peer Recovery Mentor</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">25 hours + 500 service hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years</span>
+                </div>
+                <a href="michigan/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Minnesota -->
+            <div class="state-card" data-state="minnesota" data-cost="low" data-recovery="1" data-tags="icrc">
+                <h3>Minnesota</h3>
+                <div class="credential-badge">CPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">46 hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$250</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">New 2025:</span>
+                    <span class="info-value highlight">W-2 employment required</span>
+                </div>
+                <a href="minnesota/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Mississippi -->
+            <div class="state-card" data-state="mississippi" data-cost="low" data-recovery="varies">
+                <h3>Mississippi</h3>
+                <div class="credential-badge">CPSSP - Certified Peer Support Specialist Professional</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">4 days + 3 hours online</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$30 (very affordable!)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Aug 11, Oct 13, Dec 8</span>
+                </div>
+                <a href="mississippi/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Missouri -->
+            <div class="state-card" data-state="missouri" data-cost="low" data-recovery="varies">
+                <h3>Missouri</h3>
+                <div class="credential-badge">CPS - Certified Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">5 days (or 4-day weekend)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$75 total</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">Nov-Dec 2025</span>
+                </div>
+                <a href="missouri/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Montana -->
+            <div class="state-card" data-state="montana" data-cost="varies" data-recovery="2">
+                <h3>Montana</h3>
+                <div class="credential-badge">CBHPSS - Certified Behavioral Health Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">40 hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">2 years</span>
+                </div>
+                <a href="montana/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Nebraska -->
+            <div class="state-card" data-state="nebraska" data-cost="varies" data-recovery="1">
+                <h3>Nebraska</h3>
+                <div class="credential-badge">CPSS - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">60 hours (13 domains)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">1 year, age 19+</span>
+                </div>
+                <a href="nebraska/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Nevada -->
+            <div class="state-card" data-state="nevada" data-cost="low" data-recovery="2" data-tags="icrc">
+                <h3>Nevada</h3>
+                <div class="credential-badge">PRSS - Peer Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">46 hours + 475 work hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Cost:</span>
+                    <span class="info-value">$165 (ARPA funding available)</span>
+                </div>
+                <a href="nevada/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- New Hampshire -->
+            <div class="state-card" data-state="new_hampshire" data-cost="low" data-recovery="varies" data-tags="icrc">
+                <h3>New Hampshire</h3>
+                <div class="credential-badge">SUD Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">46 hours + 500 experience</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Exam Cost:</span>
+                    <span class="info-value">$110 (IC&RC)</span>
+                </div>
+                <a href="new_hampshire/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- New Mexico -->
+            <div class="state-card" data-state="new_mexico" data-cost="free" data-recovery="3">
+                <h3>New Mexico</h3>
+                <div class="credential-badge">CPSW - Certified Peer Support Worker</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">40 hours (5 days) <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">3 years (longest)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Training:</span>
+                    <span class="info-value">June 23-27, Aug 18-22, Nov 17-21</span>
+                </div>
+                <a href="new_mexico/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- New York -->
+            <div class="state-card" data-state="new_york" data-cost="varies" data-recovery="varies">
+                <h3>New York</h3>
+                <div class="credential-badge">CRPA - Certified Recovery Peer Advocate</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">NYCB / OASAS</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">State-approved curriculum</span>
+                </div>
+                <a href="new_york/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- North Carolina -->
+            <div class="state-card" data-state="north_carolina" data-cost="varies" data-recovery="varies">
+                <h3>North Carolina</h3>
+                <div class="credential-badge">NCCPSS - NC Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">UNC-Chapel Hill</span>
+                </div>
+                <a href="north_carolina/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- North Dakota -->
+            <div class="state-card" data-state="north_dakota" data-cost="varies" data-recovery="varies">
+                <h3>North Dakota</h3>
+                <div class="credential-badge">CPSS I & II - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">40 hours (2-level system)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">ND HHS</span>
+                </div>
+                <a href="north_dakota/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Ohio -->
+            <div class="state-card" data-state="ohio" data-cost="varies" data-recovery="varies">
+                <h3>Ohio</h3>
+                <div class="credential-badge">CPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">e-Based Academy + 40 hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">OhioMHAS</span>
+                </div>
+                <a href="ohio/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Oklahoma -->
+            <div class="state-card" data-state="oklahoma" data-cost="varies" data-recovery="varies">
+                <h3>Oklahoma</h3>
+                <div class="credential-badge">PRSS - Peer Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">ODMHSAS</span>
+                </div>
+                <a href="oklahoma/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Oregon -->
+            <div class="state-card" data-state="oregon" data-cost="varies" data-recovery="varies">
+                <h3>Oregon</h3>
+                <div class="credential-badge">PSS/PWS - Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Important:</span>
+                    <span class="info-value highlight">Fee waiver through Dec 31, 2025</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Oregon Health Authority</span>
+                </div>
+                <a href="oregon/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Pennsylvania -->
+            <div class="state-card" data-state="pennsylvania" data-cost="varies" data-recovery="varies">
+                <h3>Pennsylvania</h3>
+                <div class="credential-badge">CRS - Certified Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">New 2024:</span>
+                    <span class="info-value highlight">Policy changes removing barriers</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Pennsylvania Certification Board</span>
+                </div>
+                <a href="pennsylvania/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Rhode Island -->
+            <div class="state-card" data-state="rhode_island" data-cost="varies" data-recovery="varies">
+                <h3>Rhode Island</h3>
+                <div class="credential-badge">CPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Rhode Island Certification Board</span>
+                </div>
+                <a href="rhode_island/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- South Carolina -->
+            <div class="state-card" data-state="south_carolina" data-cost="varies" data-recovery="varies">
+                <h3>South Carolina</h3>
+                <div class="credential-badge">CPSS - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">SC SHARE / SCDMH</span>
+                </div>
+                <a href="south_carolina/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- South Dakota -->
+            <div class="state-card" data-state="south_dakota" data-cost="varies" data-recovery="varies">
+                <h3>South Dakota</h3>
+                <div class="credential-badge">PSS Training Available</div>
+                <div class="info-row">
+                    <span class="info-label">Status:</span>
+                    <span class="info-value">No state certification</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">Training options available</span>
+                </div>
+                <a href="south_dakota/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Tennessee -->
+            <div class="state-card" data-state="tennessee" data-cost="varies" data-recovery="varies">
+                <h3>Tennessee</h3>
+                <div class="credential-badge">CPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">TDMHSAS</span>
+                </div>
+                <a href="tennessee/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Texas -->
+            <div class="state-card" data-state="texas" data-cost="varies" data-recovery="varies">
+                <h3>Texas</h3>
+                <div class="credential-badge">RSPS - Recovery Support Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Texas Certification Board / HHSC</span>
+                </div>
+                <a href="texas/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Utah -->
+            <div class="state-card" data-state="utah" data-cost="varies" data-recovery="varies">
+                <h3>Utah</h3>
+                <div class="credential-badge">CPSS - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">SUMH</span>
+                </div>
+                <a href="utah/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Vermont -->
+            <div class="state-card" data-state="vermont" data-cost="varies" data-recovery="varies">
+                <h3>Vermont</h3>
+                <div class="credential-badge">Dual Pathways</div>
+                <div class="info-row">
+                    <span class="info-label">Status:</span>
+                    <span class="info-value highlight">New system launching Fall 2025</span>
+                </div>
+                <a href="vermont/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Virginia -->
+            <div class="state-card" data-state="virginia" data-cost="varies" data-recovery="varies">
+                <h3>Virginia</h3>
+                <div class="credential-badge">CPRS/RPRS - Certified Peer Recovery Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Scholarship:</span>
+                    <span class="info-value">$150 available through Sept 2025</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">DBHDS & VA Cert Board</span>
+                </div>
+                <a href="virginia/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Washington -->
+            <div class="state-card" data-state="washington" data-cost="free" data-recovery="1">
+                <h3>Washington</h3>
+                <div class="credential-badge">CPSS - Certified Peer Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">80 hours (increased 2025) <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Recovery Required:</span>
+                    <span class="info-value">1 year</span>
+                </div>
+                <a href="washington/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- West Virginia -->
+            <div class="state-card" data-state="west_virginia" data-cost="varies" data-recovery="varies" data-tags="icrc">
+                <h3>West Virginia</h3>
+                <div class="credential-badge">PRSS - Peer Recovery Support Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">46 hours + 500 supervised experience</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Exam:</span>
+                    <span class="info-value">IC&RC Peer Recovery exam</span>
+                </div>
+                <a href="west_virginia/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Wisconsin -->
+            <div class="state-card" data-state="wisconsin" data-cost="low" data-recovery="varies">
+                <h3>Wisconsin</h3>
+                <div class="credential-badge">CPS - Certified Peer Specialist</div>
+                <div class="info-row">
+                    <span class="info-label">Training:</span>
+                    <span class="info-value">Multi-week <span class="free-tag">FREE</span></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Exam Cost:</span>
+                    <span class="info-value">$60 (only cost)</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">2025 Exams:</span>
+                    <span class="info-value">Sept 24, Nov 12</span>
+                </div>
+                <a href="wisconsin/index.html" class="link-button">View Details →</a>
+            </div>
+
+            <!-- Wyoming -->
+            <div class="state-card" data-state="wyoming" data-cost="varies" data-recovery="varies" data-tags="icrc">
+                <h3>Wyoming</h3>
+                <div class="credential-badge">CPS - Certified Peer Specialist (IC&RC)</div>
+                <div class="info-row">
+                    <span class="info-label">Training Hours:</span>
+                    <span class="info-value">46 hours</span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Certifying Body:</span>
+                    <span class="info-value">Recover Wyoming</span>
+                </div>
+                <a href="wyoming/index.html" class="link-button">View Details →</a>
+            </div>
+        </div>
+
+        <div class="comparison-section">
+            <h2>Quick Comparison Table</h2>
+            <p style="margin-bottom: 20px;">Click column headers to sort. View individual state pages for complete details.</p>
+            <div class="table-container">
+                <table id="comparisonTable">
+                    <thead>
+                        <tr>
+                            <th onclick="sortTable(0)">State ▼</th>
+                            <th onclick="sortTable(1)">Credential ▼</th>
+                            <th onclick="sortTable(2)">Training Hours ▼</th>
+                            <th onclick="sortTable(3)">Recovery Time ▼</th>
+                            <th onclick="sortTable(4)">Cost ▼</th>
+                            <th onclick="sortTable(5)">IC&RC ▼</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Alabama</td><td>CRSS</td><td>40</td><td>2 years</td><td>Low</td><td>No</td></tr>
+                        <tr><td>Alaska</td><td>PSP</td><td>50 CE</td><td>1 year</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>Arizona</td><td>PRSS/CPRS</td><td>Varies + exam</td><td>Varies</td><td>$200</td><td>Yes</td></tr>
+                        <tr><td>Arkansas</td><td>PRSS</td><td>30-46</td><td>2 years</td><td>Low</td><td>No</td></tr>
+                        <tr><td>California</td><td>MPSS</td><td>80 + exam</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Colorado</td><td>PSP</td><td>60 + 500 work</td><td>1 year</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Connecticut</td><td>RSS/CPRS</td><td>80 or 5-day</td><td>Varies</td><td>$200</td><td>No</td></tr>
+                        <tr><td>Delaware</td><td>CRPS</td><td>46</td><td>1 year</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>District of Columbia</td><td>CPS</td><td>80 practicum</td><td>2 years</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Florida</td><td>CRPS</td><td>40</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Georgia</td><td>CPSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Hawaii</td><td>PSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Idaho</td><td>CPSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Illinois</td><td>CRSS</td><td>100 + 300</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Indiana</td><td>CPSP</td><td>Varies</td><td>Varies</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>Iowa</td><td>PRS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Kansas</td><td>KCPM</td><td>2-level</td><td>1 year</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>Kentucky</td><td>KPS</td><td>30</td><td>In recovery</td><td>$65-$350</td><td>No</td></tr>
+                        <tr><td>Louisiana</td><td>PSS</td><td>76</td><td>1 year</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Maine</td><td>CIPSS</td><td>8 days</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Maryland</td><td>CPRS</td><td>50</td><td>2 years</td><td>Varies</td><td>Yes</td></tr>
+                        <tr><td>Massachusetts</td><td>CARC</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Michigan</td><td>CPRM</td><td>25 + 500 work</td><td>2 years</td><td>Varies</td><td>Yes</td></tr>
+                        <tr><td>Minnesota</td><td>CPRS</td><td>46</td><td>1 year</td><td>$250</td><td>Yes</td></tr>
+                        <tr><td>Mississippi</td><td>CPSSP</td><td>4 days</td><td>Varies</td><td>$30</td><td>No</td></tr>
+                        <tr><td>Missouri</td><td>CPS</td><td>5 days</td><td>Varies</td><td>$75</td><td>No</td></tr>
+                        <tr><td>Montana</td><td>CBHPSS</td><td>40</td><td>2 years</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Nebraska</td><td>CPSS</td><td>60</td><td>1 year</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Nevada</td><td>PRSS</td><td>46 + 475 work</td><td>2 years</td><td>$165</td><td>Yes</td></tr>
+                        <tr><td>New Hampshire</td><td>SUD Peer</td><td>46 + 500 work</td><td>Varies</td><td>$110</td><td>Yes</td></tr>
+                        <tr><td>New Jersey</td><td>CPRS</td><td>46</td><td>2 years</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>New Mexico</td><td>CPSW</td><td>40</td><td>3 years</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>New York</td><td>CRPA</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>North Carolina</td><td>NCCPSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>North Dakota</td><td>CPSS I & II</td><td>40</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Ohio</td><td>CPRS</td><td>e-Based + 40</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Oklahoma</td><td>PRSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Oregon</td><td>PSS/PWS</td><td>Varies</td><td>Varies</td><td>Fee waiver 2025</td><td>No</td></tr>
+                        <tr><td>Pennsylvania</td><td>CRS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Rhode Island</td><td>CPRS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>South Carolina</td><td>CPSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>South Dakota</td><td>No Cert</td><td>N/A</td><td>N/A</td><td>N/A</td><td>No</td></tr>
+                        <tr><td>Tennessee</td><td>CPRS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Texas</td><td>RSPS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Utah</td><td>CPSS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Vermont</td><td>In Development</td><td>Fall 2025</td><td>TBD</td><td>TBD</td><td>No</td></tr>
+                        <tr><td>Virginia</td><td>CPRS/RPRS</td><td>Varies</td><td>Varies</td><td>Varies</td><td>No</td></tr>
+                        <tr><td>Washington</td><td>CPSS</td><td>80</td><td>1 year</td><td>FREE</td><td>No</td></tr>
+                        <tr><td>West Virginia</td><td>PRSS</td><td>46 + 500 work</td><td>Varies</td><td>Varies</td><td>Yes</td></tr>
+                        <tr><td>Wisconsin</td><td>CPS</td><td>Multi-week</td><td>Varies</td><td>$60</td><td>No</td></tr>
+                        <tr><td>Wyoming</td><td>CPS</td><td>46</td><td>Varies</td><td>Varies</td><td>Yes</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>Disclaimer:</strong> This information is provided for educational purposes and was current as of November 2025. Requirements may change. Always verify with the official certifying body in your state.</p>
+            <p><strong>Research Methodology:</strong> Information gathered through official state behavioral health departments, SAMHSA resources, certification boards, and training provider websites.</p>
+            <p style="margin-top: 15px;">© 2025 Peer Support Specialist Certification Guide | All 51 jurisdictions researched</p>
+        </footer>
+    </div>
+
+    <script>
+        // Search functionality
+        document.getElementById('searchInput').addEventListener('input', function(e) {
+            const searchTerm = e.target.value.toLowerCase();
+            const cards = document.querySelectorAll('.state-card');
+
+            cards.forEach(card => {
+                const text = card.textContent.toLowerCase();
+                if (text.includes(searchTerm)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+
+        // Filter functionality
+        function filterStates(filter) {
+            const cards = document.querySelectorAll('.state-card');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            // Update button states
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.target.classList.add('active');
+
+            cards.forEach(card => {
+                card.style.display = 'block';
+
+                if (filter === 'free') {
+                    if (card.dataset.cost !== 'free') {
+                        card.style.display = 'none';
+                    }
+                } else if (filter === 'icrc') {
+                    if (!card.dataset.tags || !card.dataset.tags.includes('icrc')) {
+                        card.style.display = 'none';
+                    }
+                } else if (filter === 'short') {
+                    if (card.dataset.recovery !== '1') {
+                        card.style.display = 'none';
+                    }
+                }
+            });
+        }
+
+        // Table sorting
+        function sortTable(columnIndex) {
+            const table = document.getElementById('comparisonTable');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+
+            rows.sort((a, b) => {
+                const aValue = a.cells[columnIndex].textContent;
+                const bValue = b.cells[columnIndex].textContent;
+                return aValue.localeCompare(bValue);
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+    </script>
+</body>
+</html>
