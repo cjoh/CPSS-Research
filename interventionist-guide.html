@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Interventionist Guide | Core Values</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #1d4486;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20pt;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16pt;
+            font-weight: 400;
+            color: #1d4486;
+            margin: 30px 0 20px 0;
+            border-bottom: 2px solid #1d4486;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 14pt;
+            font-weight: 400;
+            color: #1d4486;
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1d4486;
+            margin: 15px 0 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-left: 4px solid #1d4486;
+        }
+
+        .nav a {
+            color: #1d4486;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .tagline {
+            font-size: 13pt;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .alert-box {
+            background-color: #e8f0ff;
+            border-left: 4px solid #1d4486;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .cert-card {
+            background-color: #f8f9fa;
+            border: 2px solid #1d4486;
+            border-radius: 5px;
+            padding: 25px;
+        }
+
+        .cert-card h3 {
+            margin-top: 0;
+            background-color: #1d4486;
+            color: white;
+            padding: 10px;
+            margin: -25px -25px 20px -25px;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .cert-card ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .cert-card li {
+            margin: 8px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1d4486;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            margin: 10px 10px 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2a5ba8;
+        }
+
+        .dos-donts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .do-column {
+            background-color: #d4edda;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+
+        .dont-column {
+            background-color: #f8d7da;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 4px solid #dc3545;
+        }
+
+        .dos-donts h3 {
+            margin-top: 0;
+        }
+
+        .dos-donts ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .dos-donts li {
+            margin: 10px 0;
+        }
+
+        .state-box {
+            background-color: #f8f9fa;
+            border: 2px solid #1d4486;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #1d4486;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 18pt;
+            }
+
+            h2 {
+                font-size: 15pt;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Professional Interventionist Guide</h1>
+        <p class="tagline">Comprehensive Legal and Certification Guide for All U.S. Jurisdictions</p>
+        <p style="font-size: 10pt; opacity: 0.8;">Updated: November 5, 2025</p>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">← Back to Main Index</a>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="alert-box">
+                <h4>Key Finding: Intervention is NOT a Regulated Profession</h4>
+                <p><strong>Critical Insight:</strong> Professional intervention (family intervention for substance use, addiction, mental health) is <strong>NOT regulated</strong> at the state or federal level in any U.S. jurisdiction.</p>
+                <ul style="margin: 15px 0 0 25px;">
+                    <li>NO state requires a license to practice as an interventionist</li>
+                    <li>NO state certification is mandatory</li>
+                    <li>NO state examination is required</li>
+                    <li>NO educational prerequisites are legally mandated</li>
+                    <li>ANYONE can legally call themselves an "interventionist"</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- The Professional Framework -->
+        <div class="section">
+            <h2>The Professional Framework</h2>
+            <p>While intervention isn't regulated, serious professional interventionists typically have:</p>
+
+            <div class="state-box">
+                <h4>Education</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Bachelor's degree in psychology, social work, counseling, or related field (common but not required)</li>
+                    <li>Master's degree (many professionals have this)</li>
+                    <li>Some have underlying clinical licenses (LCSW, LPC, etc.)</li>
+                </ul>
+            </div>
+
+            <div class="state-box">
+                <h4>Training</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Formal intervention training (14-150 hours depending on certification)</li>
+                    <li>Evidence-based models (Johnson, ARISE, Systemic, Love First)</li>
+                    <li>Family systems, motivational interviewing, substance use disorders</li>
+                </ul>
+            </div>
+
+            <div class="state-box">
+                <h4>Certification (Voluntary)</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>CIP (Certified Intervention Professional)</li>
+                    <li>BRI I/II (Board Registered Interventionist)</li>
+                    <li>CAI (Certified ARISE Interventionist)</li>
+                </ul>
+            </div>
+
+            <div class="state-box">
+                <h4>Insurance</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li>Professional liability insurance (strongly recommended)</li>
+                    <li>Business insurance</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Voluntary Certifications -->
+        <div class="section">
+            <h2>Voluntary Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>CIP: Certified Intervention Professional</h3>
+                    <p><strong>Issued By:</strong> Pennsylvania Certification Board (with Association of Intervention Specialists)</p>
+                    <p><strong>Status:</strong> Globally recognized; introduced 2015</p>
+
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li><strong>150 hours training minimum:</strong>
+                            <ul style="margin-left: 20px;">
+                                <li>20 hrs: Intervention theory & practice</li>
+                                <li>20 hrs: Substance use disorders</li>
+                                <li>20 hrs: Mental health disorders</li>
+                                <li>12 hrs: Family systems</li>
+                                <li>12 hrs: Motivational interviewing</li>
+                                <li>12 hrs: Process addictions</li>
+                                <li>12 hrs: Case management</li>
+                                <li>12 hrs: Behavioral health ethics</li>
+                                <li>6 hrs: Cultural competency</li>
+                            </ul>
+                        </li>
+                        <li>100 hours supervised work experience</li>
+                        <li>Pass CIP examination</li>
+                        <li>Continuing education for renewal</li>
+                    </ul>
+                </div>
+
+                <div class="cert-card">
+                    <h3>BRI: Board Registered Interventionist</h3>
+                    <p><strong>Issued By:</strong> Various state certification boards</p>
+                    <p><strong>Two Levels:</strong> BRI I and BRI II</p>
+
+                    <h4>BRI I Requirements:</h4>
+                    <ul>
+                        <li>License or certification in counseling or related field</li>
+                        <li>2 years experience in the field</li>
+                        <li>Professional liability insurance</li>
+                        <li>14 hours training (intervention history, family therapy, models)</li>
+                    </ul>
+
+                    <h4>BRI II Requirements:</h4>
+                    <ul>
+                        <li>All BRI I requirements</li>
+                        <li>5 total years experience conducting interventions</li>
+                        <li>14 additional training hours (co-occurring disorders, process addictions)</li>
+                    </ul>
+                </div>
+
+                <div class="cert-card">
+                    <h3>CAI: Certified ARISE Interventionist</h3>
+                    <p><strong>Issued By:</strong> ARISE Network</p>
+                    <p><strong>Model:</strong> ARISE Intervention (evidence-based, invitational)</p>
+
+                    <h4>Requirements:</h4>
+                    <ul>
+                        <li>Complete ARISE Intervention Training</li>
+                        <li>24 Group Internship sessions</li>
+                        <li>Professional liability insurance</li>
+                        <li>Clinical licensure OR membership in professional organization</li>
+                    </ul>
+
+                    <p style="margin-top: 15px;"><strong>Focus:</strong> ARISE-specific methodology, invitational approach (vs. confrontational), family systems-based</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- State Requirements -->
+        <div class="section">
+            <h2>State-by-State Legal Status</h2>
+            <div class="warning-box">
+                <h4>All 50 States + DC: UNREGULATED</h4>
+                <p>NO STATE regulates intervention as a profession. The following applies to ALL jurisdictions:</p>
+                <ul style="margin: 15px 0 0 25px;">
+                    <li>✅ NO license required</li>
+                    <li>✅ NO state certification mandatory</li>
+                    <li>✅ NO educational requirements</li>
+                    <li>✅ NO state examination</li>
+                    <li>✅ Anyone can legally practice as interventionist</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- DOs and DON'Ts -->
+        <div class="section">
+            <h2>Professional DOs and DON'Ts</h2>
+            <div class="dos-donts">
+                <div class="do-column">
+                    <h3>✓ DO:</h3>
+                    <ul>
+                        <li>Get voluntary certification (CIP, BRI, CAI)</li>
+                        <li>Obtain professional liability insurance</li>
+                        <li>Complete comprehensive training</li>
+                        <li>Use evidence-based intervention models</li>
+                        <li>Maintain clear boundaries with clients</li>
+                        <li>Provide written service agreements</li>
+                        <li>Make appropriate referrals</li>
+                        <li>Continue professional development</li>
+                        <li>Document all services thoroughly</li>
+                        <li>Follow ethical guidelines</li>
+                    </ul>
+                </div>
+
+                <div class="dont-column">
+                    <h3>✗ DON'T:</h3>
+                    <ul>
+                        <li>Diagnose mental health or substance use disorders</li>
+                        <li>Provide therapy or clinical treatment</li>
+                        <li>Prescribe medications or treatment plans</li>
+                        <li>Practice without liability insurance</li>
+                        <li>Guarantee intervention outcomes</li>
+                        <li>Use coercive or confrontational tactics</li>
+                        <li>Engage in dual relationships with clients</li>
+                        <li>Work outside your scope of competence</li>
+                        <li>Misrepresent credentials or experience</li>
+                        <li>Practice if you have underlying license restrictions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ethical Principles -->
+        <div class="section">
+            <h2>Universal Ethical Principles</h2>
+            <div class="alert-box">
+                <h4>Required for All Interventionists:</h4>
+                <ul style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li><strong>Professional Liability Insurance:</strong> Essential protection for your practice</li>
+                    <li><strong>Stay in Your Lane:</strong> Never diagnose or provide clinical services without proper licensure</li>
+                    <li><strong>Evidence-Based Practice:</strong> Use recognized intervention models with research support</li>
+                    <li><strong>Written Agreements:</strong> Provide clear service agreements to all clients</li>
+                    <li><strong>Confidentiality:</strong> Maintain appropriate privacy standards</li>
+                    <li><strong>Referral Network:</strong> Build relationships with treatment providers and clinicians</li>
+                    <li><strong>Continuing Education:</strong> Stay current on best practices and ethical standards</li>
+                    <li><strong>Cultural Competency:</strong> Respect diversity in all client interactions</li>
+                    <li><strong>No Guarantees:</strong> Be honest about intervention success rates and limitations</li>
+                    <li><strong>Family-Centered:</strong> Work with entire family system, not just identified patient</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Getting Started -->
+        <div class="section">
+            <h2>Getting Started as an Interventionist</h2>
+            <div class="success-box">
+                <h4>Recommended Path:</h4>
+                <ol style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li>Complete comprehensive intervention training (150+ hours recommended)</li>
+                    <li>Pursue CIP, BRI, or CAI certification</li>
+                    <li>Obtain professional liability insurance</li>
+                    <li>Gain supervised experience with established interventionists</li>
+                    <li>Study evidence-based intervention models</li>
+                    <li>Build referral network with treatment centers</li>
+                    <li>Develop business infrastructure and contracts</li>
+                    <li>Join professional associations (AIS, etc.)</li>
+                    <li>Commit to ongoing continuing education</li>
+                </ol>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="index.html" class="cta-button">Return to Main Index</a>
+                <a href="INTERVENTIONIST_GUIDE.md" class="cta-button" style="background-color: white; color: #1d4486; border: 2px solid #1d4486;">View Full Guide (Markdown)</a>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="section">
+            <h2>Professional Resources</h2>
+            <div class="state-box">
+                <h4>Certification Bodies</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Pennsylvania Certification Board:</strong> CIP certification</li>
+                    <li><strong>Association of Intervention Specialists (AIS):</strong> Professional organization</li>
+                    <li><strong>ARISE Network:</strong> CAI certification and training</li>
+                    <li><strong>State Certification Boards:</strong> BRI certification (varies by state)</li>
+                </ul>
+            </div>
+
+            <div class="state-box">
+                <h4>Training Programs</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Love First Institute:</strong> Love First intervention model</li>
+                    <li><strong>ARISE Intervention Training:</strong> Evidence-based invitational model</li>
+                    <li><strong>Various State Boards:</strong> BRI-specific training programs</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Important Disclaimer</h3>
+        <p>This guide is for <strong>informational and educational purposes only</strong> and does not constitute legal, medical, or professional advice.</p>
+        <p><strong>Laws and professional standards change.</strong> Always verify current requirements with certification organizations and consult licensed attorneys for legal guidance.</p>
+        <p style="margin-top: 20px; font-size: 10pt;">Document Date: November 5, 2025</p>
+        <p style="font-size: 10pt;">Repository: <a href="https://github.com/cjoh/CPSS-Research">github.com/cjoh/CPSS-Research</a></p>
+    </div>
+</body>
+</html>

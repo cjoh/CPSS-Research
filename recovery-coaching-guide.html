@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recovery Coaching Guide | Core Values</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #1d4486;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20pt;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16pt;
+            font-weight: 400;
+            color: #1d4486;
+            margin: 30px 0 20px 0;
+            border-bottom: 2px solid #1d4486;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 14pt;
+            font-weight: 400;
+            color: #1d4486;
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1d4486;
+            margin: 15px 0 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-left: 4px solid #1d4486;
+        }
+
+        .nav a {
+            color: #1d4486;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .tagline {
+            font-size: 13pt;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .alert-box {
+            background-color: #e8f0ff;
+            border-left: 4px solid #1d4486;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .danger-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1d4486;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            margin: 10px 10px 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2a5ba8;
+        }
+
+        .dos-donts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .do-column {
+            background-color: #d4edda;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+
+        .dont-column {
+            background-color: #f8d7da;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 4px solid #dc3545;
+        }
+
+        .dos-donts h3 {
+            margin-top: 0;
+        }
+
+        .dos-donts ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .dos-donts li {
+            margin: 10px 0;
+        }
+
+        .distinction-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .distinction-card {
+            border-radius: 5px;
+            padding: 25px;
+        }
+
+        .coaching-card {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+        }
+
+        .therapy-card {
+            background-color: #e8f0ff;
+            border-left: 4px solid #1d4486;
+        }
+
+        .distinction-card h3 {
+            margin-top: 0;
+        }
+
+        .distinction-card ul {
+            margin: 15px 0 0 20px;
+        }
+
+        .distinction-card li {
+            margin: 8px 0;
+        }
+
+        .footer {
+            background-color: #1d4486;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 18pt;
+            }
+
+            h2 {
+                font-size: 15pt;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+
+            .distinction-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Recovery Coaching: Ethical Practice Guide</h1>
+        <p class="tagline">Navigating the Gray Line Between Coaching and Therapy</p>
+        <p style="font-size: 10pt; opacity: 0.8;">Updated: November 5, 2025</p>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">← Back to Main Index</a>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="alert-box">
+                <h4>Who This Guide Is For</h4>
+                <p>Recovery coaches who work with individuals who are:</p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Out of active rehab/treatment</li>
+                    <li>In recovery (not actively using)</li>
+                    <li>Need support integrating recovery tools into daily life</li>
+                    <li>Require accountability and peer support</li>
+                    <li>Benefit from someone with lived experience</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Critical Distinction -->
+        <div class="section">
+            <h2>The Critical Distinction</h2>
+            <div class="distinction-grid">
+                <div class="distinction-card coaching-card">
+                    <h3>✓ Recovery Coaching</h3>
+                    <ul>
+                        <li>Peer support based on lived experience</li>
+                        <li>Accountability and goal-setting</li>
+                        <li>Resource connection and navigation</li>
+                        <li>Sharing recovery journey</li>
+                        <li>Life integration support</li>
+                        <li>Recovery planning</li>
+                        <li>Motivational support</li>
+                        <li>Post-treatment reintegration</li>
+                    </ul>
+                </div>
+
+                <div class="distinction-card therapy-card">
+                    <h3>Clinical Therapy/Counseling</h3>
+                    <ul>
+                        <li>Diagnosis of disorders</li>
+                        <li>Treatment of mental health conditions</li>
+                        <li>Treatment of substance use disorders</li>
+                        <li>Psychotherapy and clinical interventions</li>
+                        <li>Clinical treatment planning</li>
+                        <li>Medication management</li>
+                        <li>Crisis intervention</li>
+                        <li>Requires professional license</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Universal Requirements -->
+        <div class="section">
+            <h2>Universal Ethical Requirements</h2>
+            <div class="warning-box">
+                <h4>Required Regardless of State:</h4>
+
+                <p style="margin-top: 20px;"><strong>1. Ensure Client Has Therapy Support</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Client must be working with (or have access to) a licensed therapist or counselor</li>
+                    <li>Recovery coaching complements therapy; it does not replace it</li>
+                    <li>For clients with substance use disorder history, ongoing clinical support is essential</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>2. Verify Client Is In Recovery</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Client should be out of acute treatment phase</li>
+                    <li>Should have established sobriety/recovery</li>
+                    <li>Should have clinical support system in place</li>
+                    <li>Active users in crisis need clinical intervention, not coaching</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>3. Make Outbound Referrals</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Maintain referral network of licensed professionals</li>
+                    <li>Refer immediately for suicidal ideation, relapse requiring medical intervention, severe mental health crisis</li>
+                    <li>Document referrals appropriately</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>4. Clear Scope Definition</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Use coaching language, not clinical language</li>
+                    <li>Clearly state you are not a therapist</li>
+                    <li>Written agreements defining scope of support</li>
+                    <li>Transparency about your lived experience and training</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Marketing Language -->
+        <div class="section">
+            <h2>Marketing Language Framework</h2>
+            <div class="dos-donts">
+                <div class="do-column">
+                    <h3>✓ SAFE Recovery Coaching Language</h3>
+                    <ul>
+                        <li>"Supporting your recovery journey"</li>
+                        <li>"Peer support from someone with lived experience"</li>
+                        <li>"Accountability and goal-setting for sustainable recovery"</li>
+                        <li>"Helping you integrate recovery tools into daily life"</li>
+                        <li>"Recovery planning and resource connection"</li>
+                        <li>"Post-rehab life integration support"</li>
+                        <li>"Navigating challenges in early recovery"</li>
+                        <li>"Building a recovery-centered life"</li>
+                    </ul>
+                </div>
+
+                <div class="dont-column">
+                    <h3>✗ AVOID - Crosses Into Therapy</h3>
+                    <ul>
+                        <li>"Treating addiction"</li>
+                        <li>"Treating mental health conditions"</li>
+                        <li>"Diagnosing substance use disorders"</li>
+                        <li>"Therapy for addiction"</li>
+                        <li>"Counseling services"</li>
+                        <li>"Clinical treatment"</li>
+                        <li>"Curing" or "fixing" your addiction</li>
+                        <li>"Mental health therapy"</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Who You Can/Cannot Work With -->
+        <div class="section">
+            <h2>Client Eligibility Guidelines</h2>
+            <div class="dos-donts">
+                <div class="do-column">
+                    <h3>✓ Who You CAN Work With</h3>
+                    <ul>
+                        <li>Individuals who have completed inpatient/outpatient treatment</li>
+                        <li>People in stable recovery</li>
+                        <li>Clients who have established relationship with therapist/psychiatrist</li>
+                        <li>Individuals seeking peer support and accountability</li>
+                        <li>Those needing help integrating 12-step or other recovery principles</li>
+                        <li>Post-rehab clients needing reintegration support</li>
+                        <li>People with active clinical care team</li>
+                        <li>Clients working on recovery-related life goals</li>
+                    </ul>
+                </div>
+
+                <div class="dont-column">
+                    <h3>✗ Who You CANNOT Work With</h3>
+                    <ul>
+                        <li>Individuals actively using substances without medical supervision</li>
+                        <li>People in acute mental health crisis</li>
+                        <li>Those needing clinical diagnosis or treatment</li>
+                        <li>Anyone who refuses to engage with licensed clinical support</li>
+                        <li>Individuals who should be in inpatient treatment</li>
+                        <li>Those requiring detoxification</li>
+                        <li>Clients with untreated mental health emergencies</li>
+                        <li>Anyone requiring clinical assessment or treatment planning</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ethical Principles -->
+        <div class="section">
+            <h2>Core Ethical Principles</h2>
+            <div class="alert-box">
+                <h4>Essential Practices for All Recovery Coaches:</h4>
+                <ul style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li><strong>Clinical Support Requirement:</strong> All clients must have concurrent licensed clinical support</li>
+                    <li><strong>Stay in Your Lane:</strong> Never diagnose, treat, or provide clinical interventions</li>
+                    <li><strong>Referral Network:</strong> Maintain relationships with licensed therapists, counselors, and crisis services</li>
+                    <li><strong>Written Agreements:</strong> Provide clear contracts defining scope of coaching support</li>
+                    <li><strong>Professional Boundaries:</strong> Avoid dual relationships and maintain appropriate boundaries</li>
+                    <li><strong>Confidentiality:</strong> Understand and maintain appropriate privacy standards (coaching, not HIPAA)</li>
+                    <li><strong>Lived Experience:</strong> Share your recovery journey appropriately without making it about you</li>
+                    <li><strong>Professional Liability Insurance:</strong> Obtain coverage appropriate for recovery coaching</li>
+                    <li><strong>Continuing Education:</strong> Stay current on recovery models, ethics, and best practices</li>
+                    <li><strong>Cultural Competency:</strong> Respect diversity in recovery paths and cultural backgrounds</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- The Gray Line -->
+        <div class="section">
+            <h2>Navigating the Gray Line</h2>
+            <div class="warning-box">
+                <h4>When to Refer vs. When to Coach:</h4>
+
+                <p style="margin-top: 20px;"><strong>Refer to Licensed Professional When Client:</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Expresses suicidal ideation or self-harm thoughts</li>
+                    <li>Experiences active substance use relapse requiring medical attention</li>
+                    <li>Shows signs of severe mental health crisis</li>
+                    <li>Needs clinical diagnosis or treatment modification</li>
+                    <li>Requires medication management or prescription changes</li>
+                    <li>Presents with trauma requiring clinical processing</li>
+                    <li>Has symptoms beyond your scope of competence</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>You Can Coach When Client:</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Needs accountability for recovery commitments</li>
+                    <li>Wants help integrating recovery tools into daily life</li>
+                    <li>Seeks peer support from someone with lived experience</li>
+                    <li>Needs guidance navigating recovery community resources</li>
+                    <li>Benefits from goal-setting for recovery-related life areas</li>
+                    <li>Wants support maintaining boundaries in relationships</li>
+                    <li>Needs help with post-treatment reintegration challenges</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- State Requirements -->
+        <div class="section">
+            <h2>State-by-State Requirements</h2>
+            <div class="alert-box">
+                <h4>Regulation Varies by State:</h4>
+                <p>Some states have specific certification requirements for recovery coaches, while others do not regulate the profession. Common certifications include:</p>
+                <ul style="margin: 15px 0 0 25px;">
+                    <li><strong>Highly Regulated States:</strong> May require specific certification for recovery peer support (e.g., Connecticut, Florida, Georgia, New York, Pennsylvania)</li>
+                    <li><strong>Moderately Regulated States:</strong> Offer voluntary certification programs (e.g., Arizona, California, Colorado, Illinois)</li>
+                    <li><strong>Unregulated States:</strong> No specific requirements, but ethical practice still essential</li>
+                </ul>
+                <p style="margin-top: 15px;"><strong>See the <a href="index.html" style="color: #1d4486; font-weight: 700;">state directory</a> for specific requirements in your state.</strong></p>
+            </div>
+        </div>
+
+        <!-- Getting Started -->
+        <div class="section">
+            <h2>Getting Started as a Recovery Coach</h2>
+            <div class="success-box">
+                <h4>Recommended Path:</h4>
+                <ol style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li>Establish your own stable recovery (typically 2+ years recommended)</li>
+                    <li>Check your state's specific requirements and certifications</li>
+                    <li>Complete recovery coach training (40-100+ hours depending on certification)</li>
+                    <li>Pursue relevant certification (CRSS, CPRS, CPS, or state-specific)</li>
+                    <li>Obtain professional liability insurance</li>
+                    <li>Create clear coaching agreements and scope documents</li>
+                    <li>Build referral network with licensed clinical professionals</li>
+                    <li>Develop ethical marketing materials using appropriate language</li>
+                    <li>Join professional associations and commit to continuing education</li>
+                    <li>Consider specialized training (trauma-informed care, motivational interviewing, etc.)</li>
+                </ol>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="index.html" class="cta-button">View State Directory</a>
+                <a href="RECOVERY_COACHING_ETHICAL_MARKETING_GUIDE.md" class="cta-button" style="background-color: white; color: #1d4486; border: 2px solid #1d4486;">View Full Guide (Markdown)</a>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="section">
+            <h2>Professional Resources</h2>
+            <div class="alert-box">
+                <h4>National Organizations</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Connecticut Community for Addiction Recovery (CCAR):</strong> Recovery coach training and certification</li>
+                    <li><strong>PRO-ACT:</strong> Professional Association for Addiction Coaches</li>
+                    <li><strong>FAVOR:</strong> Faces and Voices of Recovery (advocacy and support)</li>
+                    <li><strong>State-specific peer support organizations:</strong> Check your state directory</li>
+                </ul>
+            </div>
+
+            <div class="alert-box">
+                <h4>Crisis Resources</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>National Suicide Prevention Lifeline:</strong> 988 or 1-800-273-8255</li>
+                    <li><strong>SAMHSA National Helpline:</strong> 1-800-662-4357 (24/7 treatment referral)</li>
+                    <li><strong>Crisis Text Line:</strong> Text HOME to 741741</li>
+                    <li><strong>State-specific crisis lines:</strong> Listed in each state's directory</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Important Disclaimer</h3>
+        <p>This guide is for <strong>informational and educational purposes only</strong> and does not constitute legal, medical, or professional advice.</p>
+        <p><strong>Laws and regulations change frequently.</strong> Always verify current requirements with state licensing boards, certification organizations, and consult licensed attorneys for legal guidance.</p>
+        <p><strong>Recovery coaching complements but does not replace clinical treatment.</strong> All clients should have access to licensed clinical support.</p>
+        <p style="margin-top: 20px; font-size: 10pt;">Document Date: November 5, 2025</p>
+        <p style="font-size: 10pt;">Repository: <a href="https://github.com/cjoh/CPSS-Research">github.com/cjoh/CPSS-Research</a></p>
+    </div>
+</body>
+</html>

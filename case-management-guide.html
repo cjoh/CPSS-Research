@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Management Guide | Core Values</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            font-size: 11pt;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #f5f5f5;
+        }
+
+        .header {
+            background-color: #1d4486;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20pt;
+            font-weight: 400;
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        h2 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 16pt;
+            font-weight: 400;
+            color: #1d4486;
+            margin: 30px 0 20px 0;
+            border-bottom: 2px solid #1d4486;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 14pt;
+            font-weight: 400;
+            color: #1d4486;
+            margin: 20px 0 10px 0;
+        }
+
+        h4 {
+            font-family: 'Roboto', sans-serif;
+            font-size: 12pt;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #1d4486;
+            margin: 15px 0 10px 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .nav {
+            background-color: #f8f9fa;
+            padding: 15px;
+            margin-bottom: 30px;
+            border-left: 4px solid #1d4486;
+        }
+
+        .nav a {
+            color: #1d4486;
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .nav a:hover {
+            text-decoration: underline;
+        }
+
+        .tagline {
+            font-size: 13pt;
+            margin-bottom: 10px;
+            opacity: 0.9;
+        }
+
+        .alert-box {
+            background-color: #e8f0ff;
+            border-left: 4px solid #1d4486;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .warning-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 25px;
+            margin: 25px 0;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .cert-card {
+            background-color: #f8f9fa;
+            border: 2px solid #1d4486;
+            border-radius: 5px;
+            padding: 25px;
+        }
+
+        .cert-card h3 {
+            margin-top: 0;
+            background-color: #1d4486;
+            color: white;
+            padding: 10px;
+            margin: -25px -25px 20px -25px;
+            border-radius: 3px 3px 0 0;
+        }
+
+        .cert-card ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .cert-card li {
+            margin: 8px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #1d4486;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: 700;
+            margin: 10px 10px 10px 0;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #2a5ba8;
+        }
+
+        .dos-donts {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        .do-column {
+            background-color: #d4edda;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 4px solid #28a745;
+        }
+
+        .dont-column {
+            background-color: #f8d7da;
+            padding: 25px;
+            border-radius: 5px;
+            border-left: 4px solid #dc3545;
+        }
+
+        .dos-donts h3 {
+            margin-top: 0;
+        }
+
+        .dos-donts ul {
+            margin: 15px 0 15px 20px;
+        }
+
+        .dos-donts li {
+            margin: 10px 0;
+        }
+
+        .state-box {
+            background-color: #f8f9fa;
+            border: 2px solid #1d4486;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
+
+        .model-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+
+        .model-card {
+            background-color: #f8f9fa;
+            border-left: 4px solid #1d4486;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .footer {
+            background-color: #1d4486;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .footer h3 {
+            color: white;
+            margin-bottom: 15px;
+        }
+
+        .footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        .footer a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 18pt;
+            }
+
+            h2 {
+                font-size: 15pt;
+            }
+
+            .container {
+                padding: 20px 15px;
+            }
+
+            .dos-donts {
+                grid-template-columns: 1fr;
+            }
+
+            .cert-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .model-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Case Management: Comprehensive Guide</h1>
+        <p class="tagline">Legal Requirements and Certification Guide for All U.S. Jurisdictions</p>
+        <p style="font-size: 10pt; opacity: 0.8;">Updated: November 5, 2025</p>
+    </div>
+
+    <div class="container">
+        <div class="nav">
+            <a href="index.html">← Back to Main Index</a>
+        </div>
+
+        <!-- Executive Summary -->
+        <div class="section">
+            <h2>Executive Summary</h2>
+            <div class="alert-box">
+                <h4>Key Finding: Case Management is NOT Uniformly Regulated</h4>
+                <p><strong>Critical Insight:</strong> Unlike professions such as nursing or social work, "case management" itself is <strong>not regulated as a standalone profession</strong> in most states.</p>
+
+                <p style="margin-top: 15px;"><strong>Instead, regulation comes through:</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Underlying Professional Licensure (RN, LCSW, MSW, LPC, etc.)</li>
+                    <li>Voluntary National Certifications (CCM, ACM, ANCC)</li>
+                    <li>Setting-Specific Requirements (Medicaid, hospitals, insurance)</li>
+                    <li>State-Specific Certifications (limited to a few states)</li>
+                </ul>
+            </div>
+
+            <div class="warning-box">
+                <h4>What This Means for Case Managers:</h4>
+                <p><strong>You likely DON'T need</strong> a specific "case manager license"</p>
+                <p style="margin-top: 15px;"><strong>You likely DO need:</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Underlying professional license (RN, LCSW, LPC, etc.) for clinical case management</li>
+                    <li>CCM or equivalent certification (employer preference or state requirement)</li>
+                    <li>Bachelor's or Master's degree in social work, nursing, or related field</li>
+                    <li>Supervised experience hours (varies by certification)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Regulatory Models -->
+        <div class="section">
+            <h2>Four Regulatory Models</h2>
+            <div class="model-grid">
+                <div class="model-card">
+                    <h3>Model 1: Underlying Profession</h3>
+                    <p><strong>Most Common</strong></p>
+                    <p style="margin: 15px 0;">State regulates the underlying profession (nursing, social work, counseling), not case management specifically.</p>
+                    <p><strong>Example:</strong> Hospital case manager must be RN; mental health case manager must be LMSW.</p>
+                </div>
+
+                <div class="model-card">
+                    <h3>Model 2: Voluntary Certification</h3>
+                    <p><strong>All States</strong></p>
+                    <p style="margin: 15px 0;">Employers require or prefer CCM or equivalent certification for professional advancement.</p>
+                    <p><strong>Example:</strong> "RN with CCM certification preferred"</p>
+                </div>
+
+                <div class="model-card">
+                    <h3>Model 3: State-Specific Cert</h3>
+                    <p><strong>Limited States</strong></p>
+                    <p style="margin: 15px 0;">State creates specific case management certification for certain settings.</p>
+                    <p><strong>States:</strong> Utah (BHCM), Florida (CBHCM), Texas (various)</p>
+                </div>
+
+                <div class="model-card">
+                    <h3>Model 4: Social Work Compact</h3>
+                    <p><strong>22 States</strong></p>
+                    <p style="margin: 15px 0;">LCSWs can practice across compact state lines (in-person and telehealth).</p>
+                    <p><strong>Benefit:</strong> Multi-state practice privilege</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- National Certifications -->
+        <div class="section">
+            <h2>National Certifications</h2>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <h3>CCM: Certified Case Manager</h3>
+                    <p><strong>Issued By:</strong> Commission for Case Manager Certification (CCMC)</p>
+                    <p><strong>Status:</strong> Most widely recognized; industry standard</p>
+                    <p><strong>Accreditation:</strong> NCCA-accredited</p>
+
+                    <h4 style="margin-top: 20px;">Eligibility (Must Meet All):</h4>
+                    <ul>
+                        <li><strong>Licensure OR Education:</strong>
+                            <ul style="margin-left: 20px;">
+                                <li>Current licensure (RN, LCSW, LPC, etc.) OR</li>
+                                <li>Bachelor's/graduate degree in health/human services</li>
+                            </ul>
+                        </li>
+                        <li><strong>Experience (one of):</strong>
+                            <ul style="margin-left: 20px;">
+                                <li>12 months supervised by CCM, OR</li>
+                                <li>24 months unsupervised, OR</li>
+                                <li>12 months as supervisor</li>
+                            </ul>
+                        </li>
+                        <li><strong>Good Moral Character</strong></li>
+                    </ul>
+
+                    <h4 style="margin-top: 20px;">Exam:</h4>
+                    <ul>
+                        <li>180 multiple-choice questions</li>
+                        <li>Computer-based testing year-round</li>
+                        <li>Covers principles, practices, healthcare management</li>
+                    </ul>
+
+                    <h4 style="margin-top: 20px;">Maintenance:</h4>
+                    <ul>
+                        <li>80 CE hours every 5 years OR re-take exam</li>
+                    </ul>
+                </div>
+
+                <div class="cert-card">
+                    <h3>ACM: Accredited Case Manager</h3>
+                    <p><strong>Issued By:</strong> American Case Management Association</p>
+                    <p><strong>Eligibility:</strong> RNs and Social Workers only</p>
+                    <p><strong>Focus:</strong> Medical/healthcare case management</p>
+
+                    <h4 style="margin-top: 20px;">Requirements:</h4>
+                    <ul>
+                        <li>Active RN or social work license</li>
+                        <li>Specified case management experience</li>
+                        <li>Pass ACM examination</li>
+                        <li>Continuing education for renewal</li>
+                    </ul>
+                </div>
+
+                <div class="cert-card">
+                    <h3>ANCC: Nursing Case Management</h3>
+                    <p><strong>Issued By:</strong> American Nurses Credentialing Center</p>
+                    <p><strong>Certification:</strong> CMGT-BC</p>
+                    <p><strong>Eligibility:</strong> Registered Nurses only</p>
+
+                    <h4 style="margin-top: 20px;">Requirements:</h4>
+                    <ul>
+                        <li>Active RN license</li>
+                        <li>Bachelor's degree in nursing or related field</li>
+                        <li>2,000 hours case management practice in last 3 years</li>
+                        <li>30 hours continuing education in case management</li>
+                        <li>Pass ANCC exam</li>
+                    </ul>
+
+                    <h4 style="margin-top: 20px;">Best For:</h4>
+                    <ul>
+                        <li>RNs specializing in case management</li>
+                        <li>Hospital and healthcare settings</li>
+                        <li>Nursing-specific career advancement</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Social Work Compact -->
+        <div class="section">
+            <h2>Social Work Licensure Compact</h2>
+            <div class="success-box">
+                <h4>22 States Participate (as of 2025)</h4>
+                <p><strong>What it means:</strong> LCSWs can practice across compact state lines for both in-person and telehealth services.</p>
+
+                <p style="margin-top: 15px;"><strong>Compact States:</strong></p>
+                <p style="margin: 10px 0;">Alabama, Arizona, Colorado, Connecticut, Georgia, Iowa, Kansas, Kentucky, Louisiana, Maine, Minnesota, Missouri, Nebraska, New Hampshire, Ohio, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Virginia, Washington</p>
+
+                <p style="margin-top: 15px;"><strong>Benefits:</strong></p>
+                <ul style="margin: 10px 0 0 25px;">
+                    <li>Single license, multi-state privilege</li>
+                    <li>Particularly important for telehealth case management</li>
+                    <li>No need for separate licenses in each compact state</li>
+                    <li>Simplified interstate practice</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- State-Specific Certifications -->
+        <div class="section">
+            <h2>State-Specific Certifications</h2>
+            <div class="state-box">
+                <h3>Utah: Behavioral Health Case Management Certificate</h3>
+                <p><strong>Effective:</strong> January 2025</p>
+                <p><strong>Requirement:</strong> For behavioral health case managers in Utah</p>
+                <p><strong>In addition to:</strong> Underlying professional license</p>
+            </div>
+
+            <div class="state-box">
+                <h3>Florida: Certified Behavioral Health Case Manager (CBHCM)</h3>
+                <p><strong>Requirement:</strong> For Medicaid-billable behavioral health services</p>
+                <p><strong>Setting:</strong> Behavioral health agencies</p>
+            </div>
+
+            <div class="state-box">
+                <h3>Texas: Various Position Requirements</h3>
+                <p><strong>Requirement:</strong> Certain state positions require CCM or equivalent</p>
+                <p><strong>Setting:</strong> State agencies and Medicaid programs</p>
+            </div>
+        </div>
+
+        <!-- DOs and DON'Ts -->
+        <div class="section">
+            <h2>Professional DOs and DON'Ts</h2>
+            <div class="dos-donts">
+                <div class="do-column">
+                    <h3>✓ DO:</h3>
+                    <ul>
+                        <li>Obtain underlying professional license (RN, LCSW, etc.)</li>
+                        <li>Pursue CCM certification for career advancement</li>
+                        <li>Maintain professional liability insurance</li>
+                        <li>Complete continuing education requirements</li>
+                        <li>Stay within your scope of practice</li>
+                        <li>Document all case management activities</li>
+                        <li>Coordinate care across providers</li>
+                        <li>Advocate for client needs appropriately</li>
+                        <li>Follow HIPAA and confidentiality standards</li>
+                        <li>Join professional associations (CMSA, etc.)</li>
+                    </ul>
+                </div>
+
+                <div class="dont-column">
+                    <h3>✗ DON'T:</h3>
+                    <ul>
+                        <li>Practice without appropriate underlying license</li>
+                        <li>Provide clinical services outside your scope</li>
+                        <li>Diagnose conditions without proper credentials</li>
+                        <li>Bill for services without proper certification</li>
+                        <li>Practice in a state without proper licensure</li>
+                        <li>Misrepresent your credentials or certifications</li>
+                        <li>Violate client confidentiality</li>
+                        <li>Engage in dual relationships with clients</li>
+                        <li>Accept commissions or kickbacks from providers</li>
+                        <li>Guarantee specific outcomes to clients</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Ethical Principles -->
+        <div class="section">
+            <h2>Universal Ethical Principles</h2>
+            <div class="alert-box">
+                <h4>Required for All Case Managers:</h4>
+                <ul style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li><strong>Professional Licensure:</strong> Maintain active, unrestricted license in your discipline</li>
+                    <li><strong>Scope of Practice:</strong> Work only within your professional boundaries</li>
+                    <li><strong>Client Advocacy:</strong> Prioritize client needs while coordinating care</li>
+                    <li><strong>Confidentiality:</strong> Maintain strict HIPAA compliance and privacy standards</li>
+                    <li><strong>Cultural Competency:</strong> Provide culturally sensitive, inclusive services</li>
+                    <li><strong>Continuing Education:</strong> Stay current on best practices and regulations</li>
+                    <li><strong>Professional Boundaries:</strong> Avoid conflicts of interest and dual relationships</li>
+                    <li><strong>Documentation:</strong> Maintain thorough, accurate case records</li>
+                    <li><strong>Coordination:</strong> Work collaboratively with healthcare team members</li>
+                    <li><strong>Ethics:</strong> Follow professional codes of ethics (NASW, ANA, CMSA, etc.)</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Getting Started -->
+        <div class="section">
+            <h2>Getting Started in Case Management</h2>
+            <div class="success-box">
+                <h4>Recommended Path:</h4>
+                <ol style="margin: 15px 0 0 25px; line-height: 2;">
+                    <li>Obtain Bachelor's or Master's degree in nursing, social work, or related field</li>
+                    <li>Get underlying professional license (RN, LCSW, LPC, etc.)</li>
+                    <li>Gain supervised case management experience (12-24 months)</li>
+                    <li>Pursue CCM certification (or ACM/ANCC if eligible)</li>
+                    <li>Obtain professional liability insurance</li>
+                    <li>Check state-specific requirements for your location</li>
+                    <li>Join professional associations (CMSA, NASW, ANA, etc.)</li>
+                    <li>Commit to ongoing continuing education</li>
+                    <li>Consider Social Work Compact if applicable</li>
+                </ol>
+            </div>
+
+            <div style="text-align: center; margin: 40px 0;">
+                <a href="index.html" class="cta-button">Return to Main Index</a>
+                <a href="CASE_MANAGEMENT_GUIDE.md" class="cta-button" style="background-color: white; color: #1d4486; border: 2px solid #1d4486;">View Full Guide (Markdown)</a>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="section">
+            <h2>Professional Resources</h2>
+            <div class="state-box">
+                <h4>Certification Bodies</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Commission for Case Manager Certification (CCMC):</strong> CCM certification</li>
+                    <li><strong>American Case Management Association:</strong> ACM certification</li>
+                    <li><strong>American Nurses Credentialing Center:</strong> ANCC case management certification</li>
+                </ul>
+            </div>
+
+            <div class="state-box">
+                <h4>Professional Associations</h4>
+                <ul style="margin: 10px 0 0 20px;">
+                    <li><strong>Case Management Society of America (CMSA):</strong> Primary professional organization</li>
+                    <li><strong>National Association of Social Workers (NASW):</strong> For social work case managers</li>
+                    <li><strong>American Nurses Association (ANA):</strong> For nursing case managers</li>
+                    <li><strong>American Case Management Association:</strong> Professional development and networking</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>Important Disclaimer</h3>
+        <p>This guide is for <strong>informational and educational purposes only</strong> and does not constitute legal, medical, or professional advice.</p>
+        <p><strong>Laws and regulations change frequently.</strong> Always verify current requirements with state licensing boards, certification organizations, and consult licensed attorneys for legal guidance.</p>
+        <p style="margin-top: 20px; font-size: 10pt;">Document Date: November 5, 2025</p>
+        <p style="font-size: 10pt;">Repository: <a href="https://github.com/cjoh/CPSS-Research">github.com/cjoh/CPSS-Research</a></p>
+    </div>
+</body>
+</html>
