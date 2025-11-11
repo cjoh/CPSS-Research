@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Coaches Working With Clients in Recovery - DO/DON'T Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            margin-top: 25px;
+        }
+
+        h4 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .doc-date {
+            color: #999;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .toc li {
+            padding: 8px 0;
+        }
+
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .toc a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .summary-box h3, .summary-box h4 {
+            color: white;
+            margin-top: 15px;
+        }
+
+        .summary-box h3:first-child, .summary-box h4:first-child {
+            margin-top: 0;
+        }
+
+        .can-cannot-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        @media (max-width: 768px) {
+            .can-cannot-box {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .can-box {
+            background: #e8f5e9;
+            border-left: 4px solid #4caf50;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .cannot-box {
+            background: #ffebee;
+            border-left: 4px solid #f44336;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .can-box h4 {
+            color: #2e7d32;
+            margin-top: 0;
+        }
+
+        .cannot-box h4 {
+            color: #c62828;
+            margin-top: 0;
+        }
+
+        .state-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 4px solid #667eea;
+        }
+
+        .state-card h3 {
+            margin-top: 0;
+            color: #667eea;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-link {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .back-link a:hover {
+            color: #764ba2;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .warning-box h4 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            header {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html">← Back to Dashboard</a>
+        </div>
+
+        <header>
+            <h1>Life Coaches Working With Clients in Recovery</h1>
+            <p class="subtitle">State-by-State DO/DON'T Guide</p>
+            <p class="doc-date">Document Date: November 5, 2025</p>
+            <p class="doc-date">Purpose: Clear guidance for life coaches on what they CAN and CANNOT do when working with clients who are in recovery from substance use or addiction</p>
+        </header>
+
+        <div class="content">
+            <div class="toc">
+                <h3>📑 Table of Contents</h3>
+                <ul>
+                    <li><a href="#critical-context">Critical Context</a></li>
+                    <li><a href="#universal-framework">Universal Framework: Context vs. Target Principle</a></li>
+                    <li><a href="#state-guide">State-by-State Guide</a></li>
+                    <li><a href="#best-practices">Universal Best Practices</a></li>
+                    <li><a href="#high-alert">State-Specific High Alert List</a></li>
+                    <li><a href="#summary">Summary: The Three-Level Test</a></li>
+                </ul>
+            </div>
+
+            <section id="critical-context">
+                <h2>CRITICAL CONTEXT</h2>
+
+                <h3>Who This Guide Is For</h3>
+                <p><strong>Life coaches</strong> (not specifically "recovery coaches") who:</p>
+                <ul>
+                    <li>Work with clients on life goals, career, relationships, personal development</li>
+                    <li>Have clients who happen to be in recovery from substance use/addiction</li>
+                    <li>Want to know: "Can I work with this person? What can I discuss? What's off-limits?"</li>
+                </ul>
+
+                <h3>The Core Question</h3>
+                <p><strong>"I'm a life coach. My client mentioned they're in recovery. Can I still work with them?"</strong></p>
+
+                <div class="summary-box">
+                    <p style="font-size: 1.2rem; margin-bottom: 20px;"><strong>General Answer: YES, in most states, BUT you must understand the boundaries.</strong></p>
+                </div>
+            </section>
+
+            <section id="universal-framework">
+                <h2>Universal Framework: The "Context vs. Target" Principle</h2>
+
+                <div class="can-cannot-box">
+                    <div class="can-box">
+                        <h4>✅ RECOVERY AS CONTEXT (Generally Okay):</h4>
+                        <ul>
+                            <li>Client is in recovery → You coach them on career goals</li>
+                            <li>You're aware of their recovery → You support life goals around it</li>
+                            <li>Recovery is part of their life → You help them build life that supports recovery</li>
+                        </ul>
+                    </div>
+
+                    <div class="cannot-box">
+                        <h4>❌ RECOVERY AS TARGET (Requires License):</h4>
+                        <ul>
+                            <li>You're treating the addiction</li>
+                            <li>You're modifying behaviors to address the substance use disorder</li>
+                            <li>You're creating strategies to maintain sobriety (that's clinical)</li>
+                            <li>You're diagnosing or assessing their addiction</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="summary-box">
+                    <h3>Key Principle Across All States</h3>
+                    <p style="font-size: 1.2rem;"><strong>You can coach someone WHO IS in recovery.</strong></p>
+                    <p style="font-size: 1.2rem;"><strong>You cannot treat their recovery, addiction, or substance use disorder.</strong></p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="state-guide">
+                <h2>STATE-BY-STATE GUIDE</h2>
+
+                <div class="state-card">
+                    <h3>ALABAMA</h3>
+                    <p><strong>Can life coaches work with clients in recovery?</strong> <span style="color: #4caf50; font-weight: bold;">YES</span>, with boundaries</p>
+
+                    <div class="can-cannot-box" style="margin-top: 15px;">
+                        <div class="can-box">
+                            <h4>✅ YOU CAN:</h4>
+                            <ul>
+                                <li>Work with clients who are in recovery on life goals (career, relationships, personal development)</li>
+                                <li>Be aware they're in recovery and support their life goals around that</li>
+                                <li>Discuss how their recovery program fits into their life schedule</li>
+                                <li>Help them set and achieve non-clinical life goals</li>
+                                <li>Say: "I'm glad you're in recovery and have clinical support. Let's work on your career transition."</li>
+                            </ul>
+                        </div>
+
+                        <div class="cannot-box">
+                            <h4>❌ YOU CANNOT:</h4>
+                            <ul>
+                                <li>Treat emotional and mental disorders or substance use disorders</li>
+                                <li>Use counseling or psychotherapy to evaluate and treat their addiction</li>
+                                <li>Create relapse prevention plans (that's clinical)</li>
+                                <li>Diagnose substance use disorder or assess their addiction severity</li>
+                                <li>Say: "Let me help you treat your addiction"</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <p style="margin-top: 15px;"><strong>Required Client Situation:</strong></p>
+                    <ul>
+                        <li>✅ Client is in recovery (stable, not actively using in crisis)</li>
+                        <li>✅ Client has or is willing to get therapist/counselor</li>
+                        <li>✅ Client understands you're a life coach, not treating their addiction</li>
+                    </ul>
+                </div>
+
+                <div class="warning-box">
+                    <h4>⚠️ CALIFORNIA - HIGHEST RISK STATE</h4>
+                    <p><strong>Can life coaches work with clients in recovery?</strong> YES, BUT CALIFORNIA IS HIGHEST RISK STATE - BE EXTRA CAREFUL</p>
+
+                    <p><strong>Critical California Note:</strong></p>
+                    <ul>
+                        <li>California uses "PRACTICE PROTECTION" not just "title protection"</li>
+                        <li>It doesn't matter what you call yourself - if you're DOING the activity, you need license</li>
+                        <li>If you're modifying behaviors TO TREAT addiction → need license</li>
+                        <li>If you're coaching on life goals FOR SOMEONE in recovery → generally okay</li>
+                    </ul>
+
+                    <p><strong>California Best Practices:</strong></p>
+                    <ul>
+                        <li>More conservative here than other states</li>
+                        <li>Clear written disclaimers</li>
+                        <li>Document client's clinical support</li>
+                        <li>Stay far from clinical language</li>
+                        <li>When in doubt, refer out</li>
+                        <li>Professional liability insurance ESSENTIAL</li>
+                    </ul>
+                </div>
+
+                <p style="margin-top: 30px;"><em>Note: Similar guidelines apply across all 50 states + DC. The key principles remain consistent:</em></p>
+                <ul>
+                    <li>Life coaching is unregulated in all states</li>
+                    <li>You can work with clients in recovery on life goals</li>
+                    <li>You cannot provide therapy, diagnosis, or clinical treatment</li>
+                    <li>Clients must have clinical support for their recovery</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="best-practices">
+                <h2>UNIVERSAL BEST PRACTICES: ALL STATES</h2>
+
+                <h3>Pre-Engagement Checklist</h3>
+                <p><strong>Before working with a client in recovery, ensure:</strong></p>
+
+                <div class="summary-box">
+                    <h4>1. ✅ Client Status:</h4>
+                    <ul>
+                        <li>☐ Client is in stable recovery (not actively using in crisis)</li>
+                        <li>☐ Client has completed or is in formal treatment</li>
+                        <li>☐ Client has established sobriety/recovery time</li>
+                    </ul>
+
+                    <h4>2. ✅ Clinical Support:</h4>
+                    <ul>
+                        <li>☐ Client has licensed therapist, counselor, or clinical provider</li>
+                        <li>☐ Client is willing to maintain this relationship</li>
+                        <li>☐ You have contact info (optional but recommended with ROI)</li>
+                    </ul>
+
+                    <h4>3. ✅ Scope Clarity:</h4>
+                    <ul>
+                        <li>☐ Client understands you're a life coach, not treating addiction</li>
+                        <li>☐ Client understands coaching vs. therapy distinction</li>
+                        <li>☐ Client agrees to written coaching agreement with disclaimers</li>
+                    </ul>
+
+                    <h4>4. ✅ Your Preparedness:</h4>
+                    <ul>
+                        <li>☐ You have referral network for crisis/clinical needs</li>
+                        <li>☐ You have professional liability insurance</li>
+                        <li>☐ You understand your state's boundaries</li>
+                    </ul>
+                </div>
+
+                <h3>Language Framework: All States</h3>
+
+                <div class="can-box">
+                    <h4>✅ SAFE LANGUAGE - Use This:</h4>
+                    <ul>
+                        <li>"Let's work on your career goals."</li>
+                        <li>"You're in recovery - that's great. Let's talk about [other life goals]."</li>
+                        <li>"I'm glad you have a therapist for your recovery. I'll support you on [career/relationships/development]."</li>
+                        <li>"Your recovery is important. Let's make sure your other goals support that."</li>
+                        <li>"Tell me about your life goals now that you're in recovery."</li>
+                        <li>"How can we build the life you want while you maintain your recovery program?"</li>
+                    </ul>
+                </div>
+
+                <div class="cannot-box">
+                    <h4>❌ UNSAFE LANGUAGE - Never Use This:</h4>
+                    <ul>
+                        <li>"I'll help you beat your addiction."</li>
+                        <li>"Let me treat your substance use disorder."</li>
+                        <li>"I'll provide recovery counseling."</li>
+                        <li>"You don't need a therapist, I can help you stay sober."</li>
+                        <li>"I'll diagnose your addiction level."</li>
+                        <li>"Let's work on your sobriety strategies." (clinical)</li>
+                        <li>"I'll help you modify your behaviors around substance use." (clinical)</li>
+                        <li>"I provide addiction treatment services."</li>
+                    </ul>
+                </div>
+
+                <h3>The "Context vs. Target" Test</h3>
+                <p><strong>Ask yourself: What am I targeting?</strong></p>
+
+                <div class="can-cannot-box">
+                    <div class="can-box">
+                        <h4>✅ OKAY - Recovery as Context:</h4>
+                        <ul>
+                            <li>Client in recovery → I'm coaching them on career</li>
+                            <li>Client's recovery is background → I'm helping with life goals</li>
+                            <li>Recovery activities are part of their schedule → I'm helping them plan around it</li>
+                            <li>They have recovery foundation → I'm building other goals on it</li>
+                        </ul>
+                    </div>
+
+                    <div class="cannot-box">
+                        <h4>❌ NOT OKAY - Recovery as Target:</h4>
+                        <ul>
+                            <li>I'm working on their sobriety strategies (clinical)</li>
+                            <li>I'm helping them stay clean (clinical)</li>
+                            <li>I'm treating their addiction (clinical)</li>
+                            <li>I'm creating their relapse prevention plan (clinical)</li>
+                            <li>I'm assessing their recovery progress (clinical)</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="high-alert">
+                <h2>State-Specific High Alert List</h2>
+
+                <div class="warning-box">
+                    <h4>⚠️ HIGHEST CAUTION STATES (be extra conservative):</h4>
+                    <ol>
+                        <li><strong>California</strong> - Practice protection; highest risk</li>
+                        <li><strong>Massachusetts</strong> - Recovery coach now licensed (March 2025)</li>
+                        <li><strong>Montana</strong> - Recovery coach requires licensure + supervision</li>
+                        <li><strong>Utah</strong> - New SB48 enhances enforcement (May 2025)</li>
+                        <li><strong>Illinois</strong> - Active enforcement</li>
+                        <li><strong>Florida</strong> - Peer specialists must be supervised</li>
+                    </ol>
+                </div>
+
+                <h3>States Where Recovery Coach is Specifically Regulated</h3>
+                <p>Don't call yourself "recovery coach" without proper credentials in these states. Stay in general life coaching territory.</p>
+                <p><em>Includes: Alabama, Arkansas, Colorado, Connecticut, Delaware, Florida, Georgia, Hawaii, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts (LICENSED), Michigan, Minnesota (DEFINED), Mississippi, Missouri, Montana (LICENSED), and others.</em></p>
+            </section>
+
+            <hr>
+
+            <section id="summary">
+                <h2>SUMMARY: THE THREE-LEVEL TEST</h2>
+
+                <div class="summary-box">
+                    <h3>Level 1: Can I Work With This Client?</h3>
+
+                    <h4>YES if:</h4>
+                    <ul>
+                        <li>✅ Client is in stable recovery (not actively using in crisis)</li>
+                        <li>✅ Client has or will get licensed clinical provider</li>
+                        <li>✅ Client wants life coaching, not addiction treatment</li>
+                        <li>✅ Your state allows general life coaching (all states)</li>
+                        <li>✅ You have referral network</li>
+                    </ul>
+
+                    <h4>NO if:</h4>
+                    <ul>
+                        <li>❌ Client actively using without medical supervision</li>
+                        <li>❌ Client refuses clinical support</li>
+                        <li>❌ Client in acute crisis</li>
+                        <li>❌ Client wants addiction treatment</li>
+                        <li>❌ You'd be positioned as their addiction provider</li>
+                    </ul>
+                </div>
+
+                <div class="summary-box" style="margin-top: 20px;">
+                    <h3>Level 2: What Can I Discuss?</h3>
+
+                    <h4>YES - Can discuss:</h4>
+                    <ul>
+                        <li>✅ Their life goals (career, relationships, development)</li>
+                        <li>✅ How recovery activities fit into life schedule</li>
+                        <li>✅ Building life that supports their recovery foundation</li>
+                        <li>✅ Goal-setting around life areas</li>
+                        <li>✅ Accountability for life goals</li>
+                        <li>✅ Recovery as context for their life</li>
+                    </ul>
+
+                    <h4>NO - Cannot discuss (clinical territory):</h4>
+                    <ul>
+                        <li>❌ Treating their addiction</li>
+                        <li>❌ Creating relapse prevention strategies (clinical)</li>
+                        <li>❌ Assessing their recovery progress (clinical)</li>
+                        <li>❌ Diagnosing addiction severity</li>
+                        <li>❌ Modifying behaviors to treat disorder</li>
+                        <li>❌ Recovery as the target of your work</li>
+                    </ul>
+                </div>
+
+                <div class="summary-box" style="margin-top: 20px;">
+                    <h3>Level 3: What's My Role?</h3>
+
+                    <h4>Your role IS:</h4>
+                    <ul>
+                        <li>✅ Life coach working with someone who happens to be in recovery</li>
+                        <li>✅ Supporting life goals while they maintain clinical support for recovery</li>
+                        <li>✅ Helping them build life they want in recovery</li>
+                        <li>✅ Accountability partner for life goals</li>
+                        <li>✅ Support for life transitions</li>
+                    </ul>
+
+                    <h4>Your role IS NOT:</h4>
+                    <ul>
+                        <li>❌ Their addiction treatment provider</li>
+                        <li>❌ Their therapist or counselor</li>
+                        <li>❌ Their recovery coach (if that's regulated in your state)</li>
+                        <li>❌ Their clinical support system</li>
+                        <li>❌ Replacement for licensed providers</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <h2>CONCLUSION</h2>
+
+            <div class="summary-box">
+                <h3>Yes, You Can Work With Clients in Recovery</h3>
+
+                <p><strong>The answer is YES in all states</strong>, with these critical conditions:</p>
+
+                <ol>
+                    <li><strong>Client must have clinical support</strong> - This is non-negotiable</li>
+                    <li><strong>You're coaching on LIFE, not treating ADDICTION</strong> - Stay clear on this</li>
+                    <li><strong>Recovery is context, not target</strong> - You support someone WHO IS in recovery, not treat the recovery</li>
+                    <li><strong>Follow your state's boundaries</strong> - Some states regulate "recovery coach" as specific role</li>
+                    <li><strong>Stay in life coaching lane</strong> - Don't drift into clinical territory</li>
+                </ol>
+
+                <h3 style="margin-top: 30px;">The Key Distinction</h3>
+                <p><strong>Life coaching someone who is in recovery</strong> = Generally okay in all states</p>
+                <p><strong>Treating addiction/providing recovery counseling</strong> = Requires license in all states</p>
+
+                <h3 style="margin-top: 30px;">When in Doubt</h3>
+                <ul>
+                    <li>Require client to have therapist</li>
+                    <li>Stay focused on life goals, not disorder treatment</li>
+                    <li>Use clear disclaimers</li>
+                    <li>Document appropriately</li>
+                    <li>Refer when needed</li>
+                    <li>Be more conservative in high-risk states (CA, MA, MT, IL, UT)</li>
+                </ul>
+
+                <h3 style="margin-top: 30px;">Your Value</h3>
+                <p>As a life coach, you provide tremendous value to clients in recovery:</p>
+                <ul>
+                    <li>Supporting their career goals</li>
+                    <li>Helping rebuild relationships</li>
+                    <li>Assisting with life transitions</li>
+                    <li>Providing accountability for goals</li>
+                    <li>Helping them build the life they want</li>
+                </ul>
+
+                <p style="font-size: 1.2rem; margin-top: 20px;"><strong>You just can't treat the addiction itself. Leave that to the licensed professionals.</strong></p>
+            </div>
+
+            <hr>
+
+            <p style="text-align: center; color: #666; margin-top: 40px;">
+                <strong>This document is for educational purposes and is not legal advice.</strong><br>
+                Consult with an attorney licensed in your state for specific legal guidance.<br><br>
+                <strong>Document Date:</strong> November 5, 2025<br>
+                <strong>Prepared for:</strong> Life coaches working with clients in recovery<br>
+                <strong>Based on:</strong> State-by-state legal research of life coaching regulations and mental health practice laws
+            </p>
+        </div>
+
+        <div class="back-link">
+            <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html">← Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Management: Comprehensive Legal and Certification Guide</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        h2 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            margin-top: 30px;
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+            margin-top: 25px;
+        }
+
+        h4 {
+            color: #667eea;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            margin-top: 20px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
+        .doc-date {
+            color: #999;
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .content {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .toc {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        .toc h3 {
+            color: #667eea;
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .toc li {
+            padding: 8px 0;
+        }
+
+        .toc a {
+            color: #667eea;
+            text-decoration: none;
+            transition: all 0.2s;
+        }
+
+        .toc a:hover {
+            color: #764ba2;
+            text-decoration: underline;
+        }
+
+        .summary-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 25px 0;
+        }
+
+        .summary-box h3, .summary-box h4 {
+            color: white;
+            margin-top: 15px;
+        }
+
+        .summary-box h3:first-child, .summary-box h4:first-child {
+            margin-top: 0;
+        }
+
+        .info-box {
+            background: #e3f2fd;
+            border-left: 4px solid #2196f3;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .info-box h4 {
+            color: #1565c0;
+            margin-top: 0;
+        }
+
+        .cert-box {
+            background: #f1f8e9;
+            border-left: 4px solid #8bc34a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .cert-box h4 {
+            color: #558b2f;
+            margin-top: 0;
+        }
+
+        .compact-box {
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .compact-box h4 {
+            color: #e65100;
+            margin-top: 0;
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        strong {
+            color: #333;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: 600;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .back-link {
+            background: white;
+            padding: 15px 25px;
+            border-radius: 10px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .back-link a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .back-link a:hover {
+            color: #764ba2;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background: #f8f9fa;
+            color: #667eea;
+            font-weight: 600;
+        }
+
+        tr:hover {
+            background: #f8f9fa;
+        }
+
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+            margin: 30px 0;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .content {
+                padding: 25px;
+            }
+
+            header {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="back-link">
+            <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html">← Back to Dashboard</a>
+        </div>
+
+        <header>
+            <h1>Case Management: Comprehensive Legal and Certification Guide</h1>
+            <p class="subtitle">All 50 States + DC</p>
+            <p class="doc-date">Document Date: November 5, 2025</p>
+            <p class="doc-date">Purpose: Complete guide to case management licensing, certification, and requirements across all U.S. jurisdictions</p>
+        </header>
+
+        <div class="content">
+            <div class="toc">
+                <h3>📑 Table of Contents</h3>
+                <ul>
+                    <li><a href="#executive-summary">Executive Summary</a></li>
+                    <li><a href="#regulatory-models">Regulatory Models</a></li>
+                    <li><a href="#ccm-certification">CCM Certification Detailed Requirements</a></li>
+                    <li><a href="#social-work-compact">Social Work Licensure Compact States</a></li>
+                    <li><a href="#quick-reference">Quick Reference Guide</a></li>
+                    <li><a href="#special-topics">Special Topics</a></li>
+                    <li><a href="#faq">Frequently Asked Questions</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </div>
+
+            <section id="executive-summary">
+                <h2>EXECUTIVE SUMMARY</h2>
+
+                <div class="summary-box">
+                    <h3>Key Finding: Case Management is NOT Uniformly Regulated</h3>
+
+                    <p><strong>Critical Insight:</strong> Unlike professions such as nursing or social work, "case management" itself is <strong>not regulated as a standalone profession</strong> in most states. Instead, regulation typically comes through:</p>
+
+                    <ol>
+                        <li><strong>Underlying Professional Licensure</strong> (RN, LCSW, MSW, LPC, etc.)</li>
+                        <li><strong>Voluntary National Certifications</strong> (CCM, ACM, ANCC)</li>
+                        <li><strong>Setting-Specific Requirements</strong> (Medicaid, hospitals, insurance)</li>
+                        <li><strong>State-Specific Certifications</strong> (limited to a few states)</li>
+                    </ol>
+                </div>
+
+                <div class="info-box">
+                    <h4>The Regulatory Landscape</h4>
+                    <p><strong>NO STATE</strong> requires a specific "case manager license" to practice case management independently.</p>
+
+                    <p><strong>MOST STATES</strong> require underlying professional licensure if providing case management in healthcare/clinical settings:</p>
+                    <ul>
+                        <li>Registered Nurse (RN)</li>
+                        <li>Licensed Clinical Social Worker (LCSW)</li>
+                        <li>Licensed Master Social Worker (LMSW)</li>
+                        <li>Licensed Professional Counselor (LPC)</li>
+                        <li>Other health/human services licenses</li>
+                    </ul>
+
+                    <p><strong>SOME STATES</strong> have specific case management certifications for certain settings:</p>
+                    <ul>
+                        <li>Utah: Behavioral Health Case Management Certificate</li>
+                        <li>Florida: Certified Behavioral Health Case Manager (CBHCM)</li>
+                        <li>Texas: Requires CCM or equivalent for certain positions</li>
+                    </ul>
+
+                    <p><strong>22 STATES</strong> participate in Social Work Licensure Compact (enables multi-state practice for LCSWs)</p>
+                </div>
+
+                <h3>National Certifications (Voluntary)</h3>
+
+                <div class="cert-box">
+                    <h4>1. CCM (Certified Case Manager)</h4>
+                    <ul>
+                        <li><strong>Issued by:</strong> Commission for Case Manager Certification (CCMC)</li>
+                        <li><strong>Status:</strong> Most widely recognized; industry standard</li>
+                        <li><strong>Accreditation:</strong> NCCA-accredited</li>
+                        <li><strong>Endorsed by:</strong> NASW, Case Management Society of America</li>
+                        <li><strong>Cross-setting, cross-discipline</strong></li>
+                    </ul>
+                </div>
+
+                <div class="cert-box">
+                    <h4>2. ACM (Accredited Case Manager)</h4>
+                    <ul>
+                        <li><strong>Issued by:</strong> American Case Management Association</li>
+                        <li><strong>Eligibility:</strong> RNs and Social Workers only</li>
+                        <li><strong>Focus:</strong> Medical/healthcare case management</li>
+                    </ul>
+                </div>
+
+                <div class="cert-box">
+                    <h4>3. ANCC Nursing Case Management Certification (CMGT-BC)</h4>
+                    <ul>
+                        <li><strong>Issued by:</strong> American Nurses Credentialing Center</li>
+                        <li><strong>Eligibility:</strong> Registered Nurses only</li>
+                        <li><strong>Requires:</strong> Active RN license</li>
+                    </ul>
+                </div>
+
+                <div class="summary-box">
+                    <h3>What This Means for Case Managers</h3>
+                    <p><strong>You likely DON'T need a specific "case manager license"</strong></p>
+                    <p><strong>You likely DO need:</strong></p>
+                    <ul>
+                        <li>Underlying professional license (RN, LCSW, LPC, etc.) for clinical case management</li>
+                        <li>CCM or equivalent certification (employer preference or state requirement)</li>
+                        <li>Bachelor's or Master's degree in social work, nursing, or related field</li>
+                        <li>Supervised experience hours (varies by certification)</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="regulatory-models">
+                <h2>REGULATORY MODELS</h2>
+
+                <h3>Model 1: Regulation Through Underlying Profession (Most Common)</h3>
+                <div class="info-box">
+                    <h4>How it works:</h4>
+                    <ul>
+                        <li>State regulates the underlying profession (nursing, social work, counseling)</li>
+                        <li>Case management is a function performed by licensed professionals</li>
+                        <li>No separate case management license exists</li>
+                        <li>Scope of practice defined by professional license</li>
+                    </ul>
+
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li>Hospital case manager must be RN (regulated by state nursing board)</li>
+                        <li>Mental health case manager must be LMSW or LPC (regulated by social work/counseling board)</li>
+                        <li>The "case management" activity is covered under their professional scope</li>
+                    </ul>
+
+                    <p><strong>States using this model:</strong> Most states (40+)</p>
+                </div>
+
+                <h3>Model 2: Voluntary Certification Model</h3>
+                <div class="info-box">
+                    <h4>How it works:</h4>
+                    <ul>
+                        <li>State doesn't require case management certification</li>
+                        <li>Employers may require or prefer CCM or equivalent</li>
+                        <li>Professional advancement and credibility</li>
+                        <li>May be required for Medicaid billing or certain contracts</li>
+                    </ul>
+
+                    <p><strong>Example:</strong></p>
+                    <ul>
+                        <li>Employer posts job: "RN with CCM certification preferred"</li>
+                        <li>Insurance company: "Must have CCM to be in our network"</li>
+                        <li>Hospital: "CCM required for case management supervisor position"</li>
+                    </ul>
+
+                    <p><strong>States using this model:</strong> All states (employer-driven)</p>
+                </div>
+
+                <h3>Model 4: Social Work Compact (Interstate Practice)</h3>
+                <div class="compact-box">
+                    <h4>How it works:</h4>
+                    <ul>
+                        <li>22 states participate in Social Work Licensure Compact</li>
+                        <li>LCSWs can practice across state lines (in-person and telehealth)</li>
+                        <li>Single license, multi-state privilege</li>
+                        <li>Particularly important for remote/telehealth case management</li>
+                    </ul>
+
+                    <p><strong>Compact States (as of 2025):</strong></p>
+                    <p>Alabama, Arizona, Colorado, Connecticut, Georgia, Iowa, Kansas, Kentucky, Louisiana, Maine, Minnesota, Missouri, Nebraska, New Hampshire, Ohio, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Virginia, Washington</p>
+
+                    <p><strong>Implementation:</strong> 18-24 months after enactment</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="ccm-certification">
+                <h2>CCM CERTIFICATION DETAILED REQUIREMENTS</h2>
+
+                <h3>Eligibility Requirements (Must Meet All Three)</h3>
+
+                <div class="cert-box">
+                    <h4>1. Licensure OR Education (must meet ONE):</h4>
+
+                    <p><strong>Option A - Current Licensure/Certification:</strong></p>
+                    <ul>
+                        <li>Current, active, unrestricted licensure or certification in health or human services discipline</li>
+                        <li>Examples: RN, LCSW, LMFT, LPC, LMHC, Licensed Psychologist, OT, PT, etc.</li>
+                    </ul>
+
+                    <p><strong>Option B - Baccalaureate or Graduate Degree:</strong></p>
+                    <ul>
+                        <li>Bachelor's or graduate degree in social work, nursing, or related health/human services field</li>
+                        <li>Must promote physical, psychosocial, and/or vocational well-being</li>
+                        <li>From nationally accredited institution</li>
+                        <li>Curriculum must include supervised field experience</li>
+                    </ul>
+                </div>
+
+                <div class="cert-box">
+                    <h4>2. Employment Experience (must meet ONE):</h4>
+
+                    <p><strong>Option 1:</strong> 12 months full-time acceptable case management employment in last 5 years, supervised by a CCM (who has been certified for at least 1 year)</p>
+
+                    <p><strong>Option 2:</strong> 24 months full-time acceptable case management employment in last 5 years</p>
+
+                    <p><strong>Option 3:</strong> 12 months full-time case management employment as supervisor of individuals providing case management services</p>
+                </div>
+
+                <div class="cert-box">
+                    <h4>3. Good Moral Character</h4>
+                    <ul>
+                        <li>Attestation on application</li>
+                        <li>Background check may be required</li>
+                    </ul>
+                </div>
+
+                <h3>CCM Exam</h3>
+                <ul>
+                    <li>180 multiple-choice questions</li>
+                    <li>Computer-based testing</li>
+                    <li>Year-round availability</li>
+                    <li>Covers: Case Management Principles, Practices, Healthcare Management, Community Resources, Psychosocial Aspects, Rehabilitation, etc.</li>
+                </ul>
+
+                <h3>CCM Maintenance</h3>
+                <ul>
+                    <li>80 Continuing Education hours every 5 years</li>
+                    <li>Or re-take exam</li>
+                </ul>
+            </section>
+
+            <hr>
+
+            <section id="social-work-compact">
+                <h2>SOCIAL WORK LICENSURE COMPACT STATES (22 States)</h2>
+
+                <div class="compact-box">
+                    <h4>Compact States:</h4>
+                    <p>Alabama, Arizona, Colorado, Connecticut, Georgia, Iowa, Kansas, Kentucky, Louisiana, Maine, Minnesota, Missouri, Nebraska, New Hampshire, Ohio, Rhode Island, South Dakota, Tennessee, Utah, Vermont, Virginia, Washington</p>
+
+                    <h4>What the Compact Provides:</h4>
+                    <ul>
+                        <li>LCSWs can practice across compact state lines</li>
+                        <li>Applies to both in-person and telehealth</li>
+                        <li>Single license, multi-state privilege</li>
+                        <li>Home state maintains primary regulation</li>
+                        <li>Facilitates case management across states</li>
+                    </ul>
+
+                    <p><strong>Implementation:</strong> Takes 18-24 months after state enactment</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="quick-reference">
+                <h2>QUICK REFERENCE GUIDE</h2>
+
+                <h3>Do I Need a License to be a Case Manager?</h3>
+
+                <div class="summary-box">
+                    <p><strong>NO</strong> - There is no "case manager license" in any U.S. state</p>
+
+                    <p><strong>BUT</strong> - You likely need:</p>
+
+                    <ol>
+                        <li><strong>Underlying Professional License</strong> if working in clinical/healthcare settings:
+                            <ul>
+                                <li>RN (Registered Nurse)</li>
+                                <li>LCSW (Licensed Clinical Social Worker)</li>
+                                <li>LMSW/LSW (Licensed Master/Licensed Social Worker)</li>
+                                <li>LPC/LPCC (Licensed Professional Counselor)</li>
+                                <li>Other health/human services license</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>National Certification</strong> (often required or strongly preferred):
+                            <ul>
+                                <li>CCM (Certified Case Manager) - Most common</li>
+                                <li>ACM (Accredited Case Manager) - For RNs and SWs</li>
+                                <li>ANCC - For RNs only</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Education:</strong>
+                            <ul>
+                                <li>Bachelor's degree minimum (often required)</li>
+                                <li>Master's degree preferred or required for clinical case management</li>
+                                <li>Degree in social work, nursing, or related field</li>
+                            </ul>
+                        </li>
+
+                        <li><strong>Experience:</strong>
+                            <ul>
+                                <li>Varies by employer and certification</li>
+                                <li>CCM requires 12-24 months case management experience</li>
+                                <li>Clinical positions may require more</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </div>
+
+                <h3>CCM vs. ACM vs. ANCC - Which One?</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Certification</th>
+                            <th>Best For</th>
+                            <th>Eligibility</th>
+                            <th>Recognition</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>CCM</strong></td>
+                            <td>Anyone in case management (cross-discipline)</td>
+                            <td>Broad (any health/human services license OR degree + experience)</td>
+                            <td>Industry standard; most widely accepted</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ACM</strong></td>
+                            <td>RNs and Social Workers specifically</td>
+                            <td>Must be RN or Social Worker</td>
+                            <td>Good, but less widespread than CCM</td>
+                        </tr>
+                        <tr>
+                            <td><strong>ANCC</strong></td>
+                            <td>Registered Nurses in nursing case management</td>
+                            <td>Must have RN license</td>
+                            <td>Excellent in nursing-specific roles</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <p style="margin-top: 15px;"><strong>Bottom Line:</strong> CCM is the most versatile and widely recognized</p>
+            </section>
+
+            <hr>
+
+            <section id="special-topics">
+                <h2>SPECIAL TOPICS</h2>
+
+                <h3>Telehealth Case Management</h3>
+                <div class="info-box">
+                    <h4>Multi-State Practice Considerations:</h4>
+
+                    <p><strong>For Social Workers:</strong></p>
+                    <ul>
+                        <li>If LCSW in Social Work Compact state → Can practice in other compact states</li>
+                        <li>If NOT in compact state → Need license in each state where patient is located</li>
+                    </ul>
+
+                    <p><strong>For Nurses:</strong></p>
+                    <ul>
+                        <li>Nurse Licensure Compact (NLC) is separate and different</li>
+                        <li>Enhanced Nurse Licensure Compact (eNLC) allows multi-state practice for RNs</li>
+                        <li>Check NLC status for nursing case management</li>
+                    </ul>
+
+                    <p><strong>Best Practices:</strong></p>
+                    <ul>
+                        <li>Verify licensure requirements before providing telehealth case management</li>
+                        <li>Compact participation simplifies but doesn't eliminate all requirements</li>
+                        <li>Professional liability insurance should cover telehealth</li>
+                    </ul>
+                </div>
+
+                <h3>Career Advancement Path</h3>
+                <div class="cert-box">
+                    <p><strong>Entry Level:</strong></p>
+                    <ul>
+                        <li>Bachelor's degree</li>
+                        <li>Underlying license (if required)</li>
+                        <li>Entry-level case management role</li>
+                    </ul>
+
+                    <p><strong>Mid-Level:</strong></p>
+                    <ul>
+                        <li>2-5 years experience</li>
+                        <li>CCM certification</li>
+                        <li>Case manager or senior case manager</li>
+                    </ul>
+
+                    <p><strong>Advanced:</strong></p>
+                    <ul>
+                        <li>Master's degree</li>
+                        <li>LCSW or advanced license</li>
+                        <li>CCM + years of experience</li>
+                        <li>Case management supervisor/manager</li>
+                    </ul>
+
+                    <p><strong>Leadership:</strong></p>
+                    <ul>
+                        <li>Extensive experience</li>
+                        <li>CCM essential</li>
+                        <li>Director of Case Management</li>
+                        <li>VP of Care Management</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="faq">
+                <h2>FREQUENTLY ASKED QUESTIONS</h2>
+
+                <div class="info-box">
+                    <h4>Q: Do I need a license to be a case manager?</h4>
+                    <p>A: There's no "case manager license," but you typically need an underlying professional license (RN, LCSW, etc.) for clinical case management.</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>Q: Is CCM required?</h4>
+                    <p>A: Rarely legally required (exceptions in FL, TX for some roles), but very commonly required or strongly preferred by employers.</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>Q: Can I be a case manager with just a bachelor's degree?</h4>
+                    <p>A: In some settings yes, but clinical case management typically requires professional licensure which requires bachelor's (for some) or master's (for clinical social work).</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>Q: Can I practice case management across state lines?</h4>
+                    <p>A: Depends on your underlying license. Social Work Compact (22 states) allows LCSWs multi-state practice. Otherwise, need license in each state.</p>
+                </div>
+
+                <div class="info-box">
+                    <h4>Q: Is CCM worth it?</h4>
+                    <p>A: For most case managers, yes. Industry standard, widely recognized, often required or preferred, helps with career advancement. 58% of employers pay for it.</p>
+                </div>
+            </section>
+
+            <hr>
+
+            <section id="resources">
+                <h2>RESOURCES</h2>
+
+                <h3>National Organizations:</h3>
+
+                <div class="cert-box">
+                    <h4>Commission for Case Manager Certification (CCMC)</h4>
+                    <ul>
+                        <li>Website: ccmcertification.org</li>
+                        <li>CCM certification authority</li>
+                        <li>Eligibility tools, exam info, CE tracking</li>
+                    </ul>
+                </div>
+
+                <div class="cert-box">
+                    <h4>Case Management Society of America (CMSA)</h4>
+                    <ul>
+                        <li>Website: cmsa.org</li>
+                        <li>Professional association</li>
+                        <li>Standards of Practice</li>
+                        <li>Continuing education</li>
+                    </ul>
+                </div>
+
+                <div class="cert-box">
+                    <h4>National Association of Social Workers (NASW)</h4>
+                    <ul>
+                        <li>Website: socialworkers.org</li>
+                        <li>Social work professional organization</li>
+                        <li>Endorses CCM</li>
+                        <li>State chapters</li>
+                    </ul>
+                </div>
+            </section>
+
+            <hr>
+
+            <h2>CONCLUSION</h2>
+
+            <div class="summary-box">
+                <h3>Key Takeaways:</h3>
+
+                <ol>
+                    <li><strong>Case management is NOT a licensed profession</strong> - No state requires a "case manager license"</li>
+                    <li><strong>Underlying licensure IS required</strong> for clinical case management (RN, LCSW, LPC, etc.)</li>
+                    <li><strong>CCM is the industry standard</strong> certification - Not legally required (except FL Medicaid), but commonly required or preferred by employers</li>
+                    <li><strong>22 states participate in Social Work Compact</strong> - Facilitates multi-state practice for LCSWs</li>
+                    <li><strong>State-specific requirements are rare</strong> - Utah (behavioral health certificate), Florida (CBHCM for Medicaid), Texas (some positions) are exceptions</li>
+                    <li><strong>Education + Experience + Certification</strong> = Competitive case manager</li>
+                </ol>
+
+                <h3 style="margin-top: 30px;">Recommended Path:</h3>
+                <ol>
+                    <li>Get bachelor's or master's degree in social work, nursing, or related field</li>
+                    <li>Obtain professional licensure (LCSW, RN, LPC, etc.) for clinical settings</li>
+                    <li>Gain 12-24 months case management experience</li>
+                    <li>Get CCM certification</li>
+                    <li>Maintain continuing education</li>
+                    <li>Consider state-specific certifications if applicable</li>
+                </ol>
+
+                <h3 style="margin-top: 30px;">Bottom Line:</h3>
+                <p>You don't need a "case manager license" because it doesn't exist. You DO need the right combination of education, professional licensure (for clinical work), experience, and certification (CCM) to be competitive in the field.</p>
+            </div>
+
+            <hr>
+
+            <p style="text-align: center; color: #666; margin-top: 40px;">
+                <strong>Document Date:</strong> November 5, 2025<br>
+                <strong>Disclaimer:</strong> This guide is for informational purposes only and does not constitute legal or professional advice. Requirements change; always verify current requirements with state licensing boards, certification organizations, and employers.<br><br>
+                <strong>Sources:</strong> Commission for Case Manager Certification (CCMC), state licensing boards, Social Work Licensure Compact, state Medicaid agencies, professional associations, web research conducted November 2025.
+            </p>
+        </div>
+
+        <div class="back-link">
+            <a href="BEHAVIORAL_HEALTH_PRACTICE_DASHBOARD.html">← Back to Dashboard</a>
+        </div>
+    </div>
+</body>
+</html>
